@@ -1,0 +1,1836 @@
+Parsing GraphDef...
+Parsing OpLog...
+Preparing Views...
+
+=========================Options=============================
+-max_depth                  10000
+-min_bytes                  0
+-min_micros                 0
+-min_params                 0
+-min_float_ops              0
+-device_regexes             .*
+-order_by                   name
+-account_type_regexes       _trainable_variables
+-start_name_regexes         .*
+-trim_name_regexes          
+-show_name_regexes          .*
+-hide_name_regexes          
+-account_displayed_op_only  true
+-select                     params
+-output                     stdout:
+
+==================Model Analysis Report======================
+_TFProfRoot (--/850.99k params)
+  init/init_conv/DW (3x3x3x16, 432/432 params)
+  logit/DW (64x10, 640/640 params)
+  logit/biases (10, 10/10 params)
+  unit_1_0/shared_activation/init_bn/beta (16, 16/16 params)
+  unit_1_0/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_0/sub2/bn2/beta (16, 16/16 params)
+  unit_1_0/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_1/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_1/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_1/sub2/bn2/beta (16, 16/16 params)
+  unit_1_1/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_2/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_2/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_2/sub2/bn2/beta (16, 16/16 params)
+  unit_1_2/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_3/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_3/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_3/sub2/bn2/beta (16, 16/16 params)
+  unit_1_3/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_4/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_4/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_4/sub2/bn2/beta (16, 16/16 params)
+  unit_1_4/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_5/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_5/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_5/sub2/bn2/beta (16, 16/16 params)
+  unit_1_5/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_6/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_6/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_6/sub2/bn2/beta (16, 16/16 params)
+  unit_1_6/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_7/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_7/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_7/sub2/bn2/beta (16, 16/16 params)
+  unit_1_7/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_8/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_1_8/sub1/conv1/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_1_8/sub2/bn2/beta (16, 16/16 params)
+  unit_1_8/sub2/conv2/DW (3x3x16x16, 2.30k/2.30k params)
+  unit_2_0/residual_only_activation/init_bn/beta (16, 16/16 params)
+  unit_2_0/sub1/conv1/DW (3x3x16x32, 4.61k/4.61k params)
+  unit_2_0/sub2/bn2/beta (32, 32/32 params)
+  unit_2_0/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_1/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_1/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_1/sub2/bn2/beta (32, 32/32 params)
+  unit_2_1/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_2/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_2/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_2/sub2/bn2/beta (32, 32/32 params)
+  unit_2_2/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_3/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_3/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_3/sub2/bn2/beta (32, 32/32 params)
+  unit_2_3/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_4/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_4/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_4/sub2/bn2/beta (32, 32/32 params)
+  unit_2_4/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_5/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_5/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_5/sub2/bn2/beta (32, 32/32 params)
+  unit_2_5/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_6/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_6/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_6/sub2/bn2/beta (32, 32/32 params)
+  unit_2_6/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_7/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_7/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_7/sub2/bn2/beta (32, 32/32 params)
+  unit_2_7/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_8/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_2_8/sub1/conv1/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_2_8/sub2/bn2/beta (32, 32/32 params)
+  unit_2_8/sub2/conv2/DW (3x3x32x32, 9.22k/9.22k params)
+  unit_3_0/residual_only_activation/init_bn/beta (32, 32/32 params)
+  unit_3_0/sub1/conv1/DW (3x3x32x64, 18.43k/18.43k params)
+  unit_3_0/sub2/bn2/beta (64, 64/64 params)
+  unit_3_0/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_1/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_1/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_1/sub2/bn2/beta (64, 64/64 params)
+  unit_3_1/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_2/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_2/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_2/sub2/bn2/beta (64, 64/64 params)
+  unit_3_2/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_3/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_3/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_3/sub2/bn2/beta (64, 64/64 params)
+  unit_3_3/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_4/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_4/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_4/sub2/bn2/beta (64, 64/64 params)
+  unit_3_4/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_5/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_5/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_5/sub2/bn2/beta (64, 64/64 params)
+  unit_3_5/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_6/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_6/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_6/sub2/bn2/beta (64, 64/64 params)
+  unit_3_6/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_7/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_7/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_7/sub2/bn2/beta (64, 64/64 params)
+  unit_3_7/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_8/residual_only_activation/init_bn/beta (64, 64/64 params)
+  unit_3_8/sub1/conv1/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_3_8/sub2/bn2/beta (64, 64/64 params)
+  unit_3_8/sub2/conv2/DW (3x3x64x64, 36.86k/36.86k params)
+  unit_last/final_bn/beta (64, 64/64 params)
+
+======================End of Report==========================
+Parsing GraphDef...
+Parsing OpLog...
+Preparing Views...
+
+=========================Options=============================
+-max_depth                  10000
+-min_bytes                  0
+-min_micros                 0
+-min_params                 0
+-min_float_ops              1
+-device_regexes             .*
+-order_by                   float_ops
+-account_type_regexes       .*
+-start_name_regexes         .*
+-trim_name_regexes          
+-show_name_regexes          .*
+-hide_name_regexes          
+-account_displayed_op_only  true
+-select                     float_ops
+-output                     stdout:
+
+==================Model Analysis Report======================
+_TFProfRoot (0/32.12b flops)
+  unit_3_2/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_4/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_4/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_5/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_5/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_6/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_6/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_7/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_7/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_8/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_8/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_0/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_1/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_1/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_3/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_2/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_3/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_3/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_4/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_4/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_5/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_5/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_6/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_6/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_7/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_7/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_8/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_3_8/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_3/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_0/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_0/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_1/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_1/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_2/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_2/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_3/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_3/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_4/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_4/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_5/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_5/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_6/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_6/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_7/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_7/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_1_8/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_1_8/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_0/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_1/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_1/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_2_2/sub1/conv1/Conv2D (603.98m/603.98m flops)
+  unit_2_2/sub2/conv2/Conv2D (603.98m/603.98m flops)
+  unit_3_0/sub1/conv1/Conv2D (301.99m/301.99m flops)
+  unit_2_0/sub1/conv1/Conv2D (301.99m/301.99m flops)
+  init/init_conv/Conv2D (113.25m/113.25m flops)
+  logit/xw_plus_b (1.28k/165.12k flops)
+    logit/xw_plus_b/MatMul (163.84k/163.84k flops)
+  gradients/logit/xw_plus_b/MatMul_grad/MatMul_1 (163.84k/163.84k flops)
+  gradients/logit/xw_plus_b/MatMul_grad/MatMul (163.84k/163.84k flops)
+
+======================End of Report==========================
+2017-07-30 07:27:23.975413: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-07-30 07:27:23.975905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1e.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+2017-07-30 07:27:23.975923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-07-30 07:27:23.975929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-07-30 07:27:23.975944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+2017-07-30 07:27:25.069779: I tensorflow/compiler/xla/service/platform_util.cc:58] platform CUDA present with 1 visible devices
+2017-07-30 07:27:25.069817: I tensorflow/compiler/xla/service/platform_util.cc:58] platform Host present with 4 visible devices
+2017-07-30 07:27:25.071053: I tensorflow/compiler/xla/service/service.cc:198] XLA service 0x5db3730 executing computations on platform Host. Devices:
+2017-07-30 07:27:25.071068: I tensorflow/compiler/xla/service/service.cc:206]   StreamExecutor device (0): <undefined>, <undefined>
+2017-07-30 07:27:25.071761: I tensorflow/compiler/xla/service/platform_util.cc:58] platform CUDA present with 1 visible devices
+2017-07-30 07:27:25.071780: I tensorflow/compiler/xla/service/platform_util.cc:58] platform Host present with 4 visible devices
+2017-07-30 07:27:25.072157: I tensorflow/compiler/xla/service/service.cc:198] XLA service 0x5429c40 executing computations on platform CUDA. Devices:
+2017-07-30 07:27:25.072170: I tensorflow/compiler/xla/service/service.cc:206]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+INFO:tensorflow:step = 1, loss = 3.32622, precision = 0.164062
+INFO:tensorflow:global_step/sec: 4.42477
+INFO:tensorflow:step = 101, loss = 2.66449, precision = 0.359375 (22.601 sec)
+INFO:tensorflow:global_step/sec: 4.50669
+INFO:tensorflow:step = 201, loss = 2.51271, precision = 0.429688 (22.189 sec)
+INFO:tensorflow:global_step/sec: 4.48674
+INFO:tensorflow:step = 301, loss = 2.45513, precision = 0.492188 (22.288 sec)
+total_params: 850986
+Saved checkpoint after 1 epoch(s) to data/resnet56/checkpoints/00001...
+INFO:tensorflow:global_step/sec: 4.30091
+INFO:tensorflow:step = 401, loss = 2.7181, precision = 0.351562 (23.251 sec)
+INFO:tensorflow:global_step/sec: 4.46573
+INFO:tensorflow:step = 501, loss = 2.27679, precision = 0.484375 (22.393 sec)
+INFO:tensorflow:global_step/sec: 4.45313
+INFO:tensorflow:step = 601, loss = 1.92367, precision = 0.5625 (22.456 sec)
+INFO:tensorflow:global_step/sec: 4.45914
+INFO:tensorflow:step = 701, loss = 1.80959, precision = 0.585938 (22.426 sec)
+Saved checkpoint after 2 epoch(s) to data/resnet56/checkpoints/00002...
+INFO:tensorflow:global_step/sec: 4.31751
+INFO:tensorflow:step = 801, loss = 1.68848, precision = 0.703125 (23.162 sec)
+INFO:tensorflow:global_step/sec: 4.45559
+INFO:tensorflow:step = 901, loss = 1.7864, precision = 0.617188 (22.444 sec)
+INFO:tensorflow:global_step/sec: 4.4527
+INFO:tensorflow:step = 1001, loss = 1.42206, precision = 0.726562 (22.458 sec)
+INFO:tensorflow:global_step/sec: 4.45323
+INFO:tensorflow:step = 1101, loss = 1.36998, precision = 0.773438 (22.456 sec)
+Saved checkpoint after 3 epoch(s) to data/resnet56/checkpoints/00003...
+INFO:tensorflow:global_step/sec: 4.32169
+INFO:tensorflow:step = 1201, loss = 1.36128, precision = 0.726562 (23.139 sec)
+INFO:tensorflow:global_step/sec: 4.46064
+INFO:tensorflow:step = 1301, loss = 1.26582, precision = 0.765625 (22.418 sec)
+INFO:tensorflow:global_step/sec: 4.4551
+INFO:tensorflow:step = 1401, loss = 1.2677, precision = 0.734375 (22.446 sec)
+INFO:tensorflow:global_step/sec: 4.46028
+INFO:tensorflow:step = 1501, loss = 1.168, precision = 0.773438 (22.420 sec)
+Saved checkpoint after 4 epoch(s) to data/resnet56/checkpoints/00004...
+INFO:tensorflow:global_step/sec: 4.32043
+INFO:tensorflow:step = 1601, loss = 1.14813, precision = 0.726562 (23.146 sec)
+INFO:tensorflow:global_step/sec: 4.45377
+INFO:tensorflow:step = 1701, loss = 1.07151, precision = 0.8125 (22.453 sec)
+INFO:tensorflow:global_step/sec: 4.45454
+INFO:tensorflow:step = 1801, loss = 1.10903, precision = 0.726562 (22.449 sec)
+INFO:tensorflow:global_step/sec: 4.45908
+INFO:tensorflow:step = 1901, loss = 0.947002, precision = 0.796875 (22.426 sec)
+Saved checkpoint after 5 epoch(s) to data/resnet56/checkpoints/00005...
+INFO:tensorflow:global_step/sec: 4.31843
+INFO:tensorflow:step = 2001, loss = 0.955393, precision = 0.835938 (23.157 sec)
+INFO:tensorflow:global_step/sec: 4.45866
+INFO:tensorflow:step = 2101, loss = 0.923389, precision = 0.84375 (22.428 sec)
+INFO:tensorflow:global_step/sec: 4.46334
+INFO:tensorflow:step = 2201, loss = 0.987496, precision = 0.804688 (22.405 sec)
+INFO:tensorflow:global_step/sec: 4.45613
+INFO:tensorflow:step = 2301, loss = 1.15975, precision = 0.726562 (22.441 sec)
+Saved checkpoint after 6 epoch(s) to data/resnet56/checkpoints/00006...
+INFO:tensorflow:global_step/sec: 4.32005
+INFO:tensorflow:step = 2401, loss = 0.879887, precision = 0.78125 (23.148 sec)
+INFO:tensorflow:global_step/sec: 4.45803
+INFO:tensorflow:step = 2501, loss = 0.911229, precision = 0.789062 (22.431 sec)
+INFO:tensorflow:global_step/sec: 4.45678
+INFO:tensorflow:step = 2601, loss = 0.69046, precision = 0.898438 (22.438 sec)
+INFO:tensorflow:global_step/sec: 4.46156
+INFO:tensorflow:step = 2701, loss = 0.817805, precision = 0.78125 (22.414 sec)
+Saved checkpoint after 7 epoch(s) to data/resnet56/checkpoints/00007...
+INFO:tensorflow:global_step/sec: 4.31689
+INFO:tensorflow:step = 2801, loss = 1.07426, precision = 0.671875 (23.165 sec)
+INFO:tensorflow:global_step/sec: 4.45627
+INFO:tensorflow:step = 2901, loss = 0.74294, precision = 0.84375 (22.440 sec)
+INFO:tensorflow:global_step/sec: 4.46161
+INFO:tensorflow:step = 3001, loss = 0.868435, precision = 0.765625 (22.413 sec)
+INFO:tensorflow:global_step/sec: 4.45813
+INFO:tensorflow:step = 3101, loss = 0.927438, precision = 0.804688 (22.431 sec)
+Saved checkpoint after 8 epoch(s) to data/resnet56/checkpoints/00008...
+INFO:tensorflow:global_step/sec: 4.30774
+INFO:tensorflow:step = 3201, loss = 0.68573, precision = 0.859375 (23.214 sec)
+INFO:tensorflow:global_step/sec: 4.45963
+INFO:tensorflow:step = 3301, loss = 0.711697, precision = 0.867188 (22.423 sec)
+INFO:tensorflow:global_step/sec: 4.46172
+INFO:tensorflow:step = 3401, loss = 0.710988, precision = 0.851562 (22.413 sec)
+INFO:tensorflow:global_step/sec: 4.457
+INFO:tensorflow:step = 3501, loss = 0.822261, precision = 0.796875 (22.437 sec)
+Saved checkpoint after 9 epoch(s) to data/resnet56/checkpoints/00009...
+INFO:tensorflow:global_step/sec: 4.32022
+INFO:tensorflow:step = 3601, loss = 0.872244, precision = 0.78125 (23.147 sec)
+INFO:tensorflow:global_step/sec: 4.45715
+INFO:tensorflow:step = 3701, loss = 0.723737, precision = 0.828125 (22.436 sec)
+INFO:tensorflow:global_step/sec: 4.45691
+INFO:tensorflow:step = 3801, loss = 0.779144, precision = 0.835938 (22.437 sec)
+INFO:tensorflow:global_step/sec: 4.4588
+INFO:tensorflow:step = 3901, loss = 0.96097, precision = 0.75 (22.428 sec)
+Saved checkpoint after 10 epoch(s) to data/resnet56/checkpoints/00010...
+INFO:tensorflow:global_step/sec: 4.31852
+INFO:tensorflow:step = 4001, loss = 0.699941, precision = 0.859375 (23.156 sec)
+INFO:tensorflow:global_step/sec: 4.45907
+INFO:tensorflow:step = 4101, loss = 0.700696, precision = 0.8125 (22.426 sec)
+INFO:tensorflow:global_step/sec: 4.45425
+INFO:tensorflow:step = 4201, loss = 0.756563, precision = 0.820312 (22.450 sec)
+Saved checkpoint after 11 epoch(s) to data/resnet56/checkpoints/00011...
+INFO:tensorflow:global_step/sec: 4.31916
+INFO:tensorflow:step = 4301, loss = 0.842191, precision = 0.820312 (23.153 sec)
+INFO:tensorflow:global_step/sec: 4.45956
+INFO:tensorflow:step = 4401, loss = 0.72696, precision = 0.851562 (22.424 sec)
+INFO:tensorflow:global_step/sec: 4.46301
+INFO:tensorflow:step = 4501, loss = 0.712493, precision = 0.875 (22.406 sec)
+INFO:tensorflow:global_step/sec: 4.45681
+INFO:tensorflow:step = 4601, loss = 0.667135, precision = 0.851562 (22.438 sec)
+Saved checkpoint after 12 epoch(s) to data/resnet56/checkpoints/00012...
+INFO:tensorflow:global_step/sec: 4.31457
+INFO:tensorflow:step = 4701, loss = 0.629464, precision = 0.882812 (23.177 sec)
+INFO:tensorflow:global_step/sec: 4.46213
+INFO:tensorflow:step = 4801, loss = 0.711391, precision = 0.828125 (22.411 sec)
+INFO:tensorflow:global_step/sec: 4.45767
+INFO:tensorflow:step = 4901, loss = 0.735842, precision = 0.890625 (22.433 sec)
+INFO:tensorflow:global_step/sec: 4.46081
+INFO:tensorflow:step = 5001, loss = 0.658147, precision = 0.859375 (22.417 sec)
+Saved checkpoint after 13 epoch(s) to data/resnet56/checkpoints/00013...
+INFO:tensorflow:global_step/sec: 4.31289
+INFO:tensorflow:step = 5101, loss = 0.737742, precision = 0.8125 (23.186 sec)
+INFO:tensorflow:global_step/sec: 4.46708
+INFO:tensorflow:step = 5201, loss = 0.690968, precision = 0.882812 (22.386 sec)
+INFO:tensorflow:global_step/sec: 4.46364
+INFO:tensorflow:step = 5301, loss = 0.678122, precision = 0.859375 (22.403 sec)
+INFO:tensorflow:global_step/sec: 4.46291
+INFO:tensorflow:step = 5401, loss = 0.740831, precision = 0.890625 (22.407 sec)
+Saved checkpoint after 14 epoch(s) to data/resnet56/checkpoints/00014...
+INFO:tensorflow:global_step/sec: 4.32233
+INFO:tensorflow:step = 5501, loss = 0.644347, precision = 0.867188 (23.136 sec)
+INFO:tensorflow:global_step/sec: 4.46457
+INFO:tensorflow:step = 5601, loss = 0.81173, precision = 0.773438 (22.398 sec)
+INFO:tensorflow:global_step/sec: 4.46155
+INFO:tensorflow:step = 5701, loss = 0.701578, precision = 0.851562 (22.414 sec)
+INFO:tensorflow:global_step/sec: 4.46739
+INFO:tensorflow:step = 5801, loss = 0.954305, precision = 0.757812 (22.384 sec)
+Saved checkpoint after 15 epoch(s) to data/resnet56/checkpoints/00015...
+INFO:tensorflow:global_step/sec: 4.31862
+INFO:tensorflow:step = 5901, loss = 0.737447, precision = 0.828125 (23.156 sec)
+INFO:tensorflow:global_step/sec: 4.4629
+INFO:tensorflow:step = 6001, loss = 0.627578, precision = 0.859375 (22.407 sec)
+INFO:tensorflow:global_step/sec: 4.45843
+INFO:tensorflow:step = 6101, loss = 0.793367, precision = 0.820312 (22.429 sec)
+INFO:tensorflow:global_step/sec: 4.46372
+INFO:tensorflow:step = 6201, loss = 0.682096, precision = 0.835938 (22.403 sec)
+Saved checkpoint after 16 epoch(s) to data/resnet56/checkpoints/00016...
+INFO:tensorflow:global_step/sec: 4.32309
+INFO:tensorflow:step = 6301, loss = 0.721186, precision = 0.859375 (23.132 sec)
+INFO:tensorflow:global_step/sec: 4.45566
+INFO:tensorflow:step = 6401, loss = 0.628113, precision = 0.890625 (22.443 sec)
+INFO:tensorflow:global_step/sec: 4.46174
+INFO:tensorflow:step = 6501, loss = 0.802043, precision = 0.828125 (22.413 sec)
+INFO:tensorflow:global_step/sec: 4.46217
+INFO:tensorflow:step = 6601, loss = 0.652623, precision = 0.84375 (22.411 sec)
+Saved checkpoint after 17 epoch(s) to data/resnet56/checkpoints/00017...
+INFO:tensorflow:global_step/sec: 4.32147
+INFO:tensorflow:step = 6701, loss = 0.912854, precision = 0.78125 (23.140 sec)
+INFO:tensorflow:global_step/sec: 4.46251
+INFO:tensorflow:step = 6801, loss = 0.769722, precision = 0.820312 (22.409 sec)
+INFO:tensorflow:global_step/sec: 4.46156
+INFO:tensorflow:step = 6901, loss = 0.803574, precision = 0.820312 (22.414 sec)
+INFO:tensorflow:global_step/sec: 4.45998
+INFO:tensorflow:step = 7001, loss = 0.609961, precision = 0.882812 (22.422 sec)
+Saved checkpoint after 18 epoch(s) to data/resnet56/checkpoints/00018...
+INFO:tensorflow:global_step/sec: 4.32236
+INFO:tensorflow:step = 7101, loss = 0.656177, precision = 0.875 (23.136 sec)
+INFO:tensorflow:global_step/sec: 4.46779
+INFO:tensorflow:step = 7201, loss = 0.635703, precision = 0.859375 (22.382 sec)
+INFO:tensorflow:global_step/sec: 4.46543
+INFO:tensorflow:step = 7301, loss = 0.800235, precision = 0.851562 (22.394 sec)
+INFO:tensorflow:global_step/sec: 4.46226
+INFO:tensorflow:step = 7401, loss = 0.62449, precision = 0.875 (22.410 sec)
+Saved checkpoint after 19 epoch(s) to data/resnet56/checkpoints/00019...
+INFO:tensorflow:global_step/sec: 4.32109
+INFO:tensorflow:step = 7501, loss = 0.759465, precision = 0.851562 (23.142 sec)
+INFO:tensorflow:global_step/sec: 4.46537
+INFO:tensorflow:step = 7601, loss = 0.719462, precision = 0.867188 (22.394 sec)
+INFO:tensorflow:global_step/sec: 4.46668
+INFO:tensorflow:step = 7701, loss = 0.647946, precision = 0.851562 (22.388 sec)
+INFO:tensorflow:global_step/sec: 4.46441
+INFO:tensorflow:step = 7801, loss = 0.694389, precision = 0.875 (22.399 sec)
+Saved checkpoint after 20 epoch(s) to data/resnet56/checkpoints/00020...
+INFO:tensorflow:global_step/sec: 4.30831
+INFO:tensorflow:step = 7901, loss = 0.656622, precision = 0.84375 (23.211 sec)
+INFO:tensorflow:global_step/sec: 4.46249
+INFO:tensorflow:step = 8001, loss = 0.780149, precision = 0.820312 (22.409 sec)
+INFO:tensorflow:global_step/sec: 4.45584
+INFO:tensorflow:step = 8101, loss = 0.699352, precision = 0.867188 (22.442 sec)
+INFO:tensorflow:global_step/sec: 4.46396
+INFO:tensorflow:step = 8201, loss = 0.760523, precision = 0.84375 (22.402 sec)
+Saved checkpoint after 21 epoch(s) to data/resnet56/checkpoints/00021...
+INFO:tensorflow:global_step/sec: 4.31869
+INFO:tensorflow:step = 8301, loss = 0.728335, precision = 0.835938 (23.155 sec)
+INFO:tensorflow:global_step/sec: 4.46518
+INFO:tensorflow:step = 8401, loss = 0.703712, precision = 0.875 (22.395 sec)
+INFO:tensorflow:global_step/sec: 4.45911
+INFO:tensorflow:step = 8501, loss = 0.765481, precision = 0.835938 (22.426 sec)
+INFO:tensorflow:global_step/sec: 4.4629
+INFO:tensorflow:step = 8601, loss = 0.657823, precision = 0.867188 (22.407 sec)
+Saved checkpoint after 22 epoch(s) to data/resnet56/checkpoints/00022...
+INFO:tensorflow:global_step/sec: 4.32522
+INFO:tensorflow:step = 8701, loss = 0.70517, precision = 0.859375 (23.120 sec)
+INFO:tensorflow:global_step/sec: 4.46688
+INFO:tensorflow:step = 8801, loss = 0.682392, precision = 0.851562 (22.387 sec)
+INFO:tensorflow:global_step/sec: 4.45758
+INFO:tensorflow:step = 8901, loss = 0.737128, precision = 0.851562 (22.434 sec)
+Saved checkpoint after 23 epoch(s) to data/resnet56/checkpoints/00023...
+INFO:tensorflow:global_step/sec: 4.32781
+INFO:tensorflow:step = 9001, loss = 0.64845, precision = 0.859375 (23.106 sec)
+INFO:tensorflow:global_step/sec: 4.46069
+INFO:tensorflow:step = 9101, loss = 0.687264, precision = 0.84375 (22.418 sec)
+INFO:tensorflow:global_step/sec: 4.45707
+INFO:tensorflow:step = 9201, loss = 0.708714, precision = 0.851562 (22.436 sec)
+INFO:tensorflow:global_step/sec: 4.46006
+INFO:tensorflow:step = 9301, loss = 0.687788, precision = 0.851562 (22.421 sec)
+Saved checkpoint after 24 epoch(s) to data/resnet56/checkpoints/00024...
+INFO:tensorflow:global_step/sec: 4.32483
+INFO:tensorflow:step = 9401, loss = 0.651372, precision = 0.851562 (23.122 sec)
+INFO:tensorflow:global_step/sec: 4.46154
+INFO:tensorflow:step = 9501, loss = 0.625121, precision = 0.875 (22.414 sec)
+INFO:tensorflow:global_step/sec: 4.45798
+INFO:tensorflow:step = 9601, loss = 0.766614, precision = 0.8125 (22.432 sec)
+INFO:tensorflow:global_step/sec: 4.46121
+INFO:tensorflow:step = 9701, loss = 0.653729, precision = 0.851562 (22.415 sec)
+Saved checkpoint after 25 epoch(s) to data/resnet56/checkpoints/00025...
+INFO:tensorflow:global_step/sec: 4.31127
+INFO:tensorflow:step = 9801, loss = 0.700852, precision = 0.84375 (23.195 sec)
+INFO:tensorflow:global_step/sec: 4.45799
+INFO:tensorflow:step = 9901, loss = 0.680787, precision = 0.867188 (22.432 sec)
+INFO:tensorflow:global_step/sec: 4.45562
+INFO:tensorflow:step = 10001, loss = 0.703334, precision = 0.859375 (22.444 sec)
+INFO:tensorflow:global_step/sec: 4.45359
+INFO:tensorflow:step = 10101, loss = 0.623221, precision = 0.898438 (22.454 sec)
+Saved checkpoint after 26 epoch(s) to data/resnet56/checkpoints/00026...
+INFO:tensorflow:global_step/sec: 4.31643
+INFO:tensorflow:step = 10201, loss = 0.716224, precision = 0.851562 (23.167 sec)
+INFO:tensorflow:global_step/sec: 4.45598
+INFO:tensorflow:step = 10301, loss = 0.618133, precision = 0.898438 (22.442 sec)
+INFO:tensorflow:global_step/sec: 4.45422
+INFO:tensorflow:step = 10401, loss = 0.745341, precision = 0.828125 (22.451 sec)
+INFO:tensorflow:global_step/sec: 4.45835
+INFO:tensorflow:step = 10501, loss = 0.592499, precision = 0.929688 (22.430 sec)
+Saved checkpoint after 27 epoch(s) to data/resnet56/checkpoints/00027...
+INFO:tensorflow:global_step/sec: 4.31891
+INFO:tensorflow:step = 10601, loss = 0.599902, precision = 0.90625 (23.154 sec)
+INFO:tensorflow:global_step/sec: 4.46253
+INFO:tensorflow:step = 10701, loss = 0.626845, precision = 0.890625 (22.409 sec)
+INFO:tensorflow:global_step/sec: 4.45905
+INFO:tensorflow:step = 10801, loss = 0.653764, precision = 0.835938 (22.426 sec)
+INFO:tensorflow:global_step/sec: 4.46206
+INFO:tensorflow:step = 10901, loss = 0.6187, precision = 0.890625 (22.411 sec)
+Saved checkpoint after 28 epoch(s) to data/resnet56/checkpoints/00028...
+INFO:tensorflow:global_step/sec: 4.31632
+INFO:tensorflow:step = 11001, loss = 0.72997, precision = 0.84375 (23.168 sec)
+INFO:tensorflow:global_step/sec: 4.45834
+INFO:tensorflow:step = 11101, loss = 0.682012, precision = 0.882812 (22.430 sec)
+INFO:tensorflow:global_step/sec: 4.45618
+INFO:tensorflow:step = 11201, loss = 0.726139, precision = 0.867188 (22.441 sec)
+INFO:tensorflow:global_step/sec: 4.46199
+INFO:tensorflow:step = 11301, loss = 0.519582, precision = 0.929688 (22.411 sec)
+Saved checkpoint after 29 epoch(s) to data/resnet56/checkpoints/00029...
+INFO:tensorflow:global_step/sec: 4.32124
+INFO:tensorflow:step = 11401, loss = 0.596202, precision = 0.90625 (23.142 sec)
+INFO:tensorflow:global_step/sec: 4.46464
+INFO:tensorflow:step = 11501, loss = 0.695123, precision = 0.859375 (22.398 sec)
+INFO:tensorflow:global_step/sec: 4.46151
+INFO:tensorflow:step = 11601, loss = 0.873707, precision = 0.78125 (22.414 sec)
+INFO:tensorflow:global_step/sec: 4.46369
+INFO:tensorflow:step = 11701, loss = 0.730435, precision = 0.851562 (22.403 sec)
+Saved checkpoint after 30 epoch(s) to data/resnet56/checkpoints/00030...
+INFO:tensorflow:global_step/sec: 4.32285
+INFO:tensorflow:step = 11801, loss = 0.652161, precision = 0.859375 (23.133 sec)
+INFO:tensorflow:global_step/sec: 4.45769
+INFO:tensorflow:step = 11901, loss = 0.689683, precision = 0.851562 (22.433 sec)
+INFO:tensorflow:global_step/sec: 4.45789
+INFO:tensorflow:step = 12001, loss = 0.644094, precision = 0.875 (22.432 sec)
+INFO:tensorflow:global_step/sec: 4.45966
+INFO:tensorflow:step = 12101, loss = 0.627765, precision = 0.882812 (22.423 sec)
+Saved checkpoint after 31 epoch(s) to data/resnet56/checkpoints/00031...
+INFO:tensorflow:global_step/sec: 4.31395
+INFO:tensorflow:step = 12201, loss = 0.811678, precision = 0.804688 (23.181 sec)
+INFO:tensorflow:global_step/sec: 4.45634
+INFO:tensorflow:step = 12301, loss = 0.693974, precision = 0.859375 (22.440 sec)
+INFO:tensorflow:global_step/sec: 4.46389
+INFO:tensorflow:step = 12401, loss = 0.646817, precision = 0.898438 (22.402 sec)
+INFO:tensorflow:global_step/sec: 4.4598
+INFO:tensorflow:step = 12501, loss = 0.767573, precision = 0.820312 (22.423 sec)
+Saved checkpoint after 32 epoch(s) to data/resnet56/checkpoints/00032...
+INFO:tensorflow:global_step/sec: 4.31616
+INFO:tensorflow:step = 12601, loss = 0.717321, precision = 0.851562 (23.169 sec)
+INFO:tensorflow:global_step/sec: 4.45869
+INFO:tensorflow:step = 12701, loss = 0.777066, precision = 0.8125 (22.428 sec)
+INFO:tensorflow:global_step/sec: 4.45907
+INFO:tensorflow:step = 12801, loss = 0.664364, precision = 0.875 (22.426 sec)
+INFO:tensorflow:global_step/sec: 4.45688
+INFO:tensorflow:step = 12901, loss = 0.716344, precision = 0.84375 (22.437 sec)
+Saved checkpoint after 33 epoch(s) to data/resnet56/checkpoints/00033...
+INFO:tensorflow:global_step/sec: 4.30311
+INFO:tensorflow:step = 13001, loss = 0.623185, precision = 0.890625 (23.239 sec)
+INFO:tensorflow:global_step/sec: 4.46043
+INFO:tensorflow:step = 13101, loss = 0.829205, precision = 0.84375 (22.419 sec)
+INFO:tensorflow:global_step/sec: 4.45598
+INFO:tensorflow:step = 13201, loss = 0.618836, precision = 0.890625 (22.442 sec)
+Saved checkpoint after 34 epoch(s) to data/resnet56/checkpoints/00034...
+INFO:tensorflow:global_step/sec: 4.31452
+INFO:tensorflow:step = 13301, loss = 0.52459, precision = 0.921875 (23.178 sec)
+INFO:tensorflow:global_step/sec: 4.45903
+INFO:tensorflow:step = 13401, loss = 0.829758, precision = 0.796875 (22.426 sec)
+INFO:tensorflow:global_step/sec: 4.45895
+INFO:tensorflow:step = 13501, loss = 0.678913, precision = 0.875 (22.427 sec)
+INFO:tensorflow:global_step/sec: 4.4542
+INFO:tensorflow:step = 13601, loss = 0.664495, precision = 0.890625 (22.451 sec)
+Saved checkpoint after 35 epoch(s) to data/resnet56/checkpoints/00035...
+INFO:tensorflow:global_step/sec: 4.31381
+INFO:tensorflow:step = 13701, loss = 0.621205, precision = 0.898438 (23.181 sec)
+INFO:tensorflow:global_step/sec: 4.46076
+INFO:tensorflow:step = 13801, loss = 0.712205, precision = 0.851562 (22.418 sec)
+INFO:tensorflow:global_step/sec: 4.46005
+INFO:tensorflow:step = 13901, loss = 0.526218, precision = 0.9375 (22.421 sec)
+INFO:tensorflow:global_step/sec: 4.45747
+INFO:tensorflow:step = 14001, loss = 0.811407, precision = 0.84375 (22.434 sec)
+Saved checkpoint after 36 epoch(s) to data/resnet56/checkpoints/00036...
+INFO:tensorflow:global_step/sec: 4.31114
+INFO:tensorflow:step = 14101, loss = 0.519218, precision = 0.929688 (23.196 sec)
+INFO:tensorflow:global_step/sec: 4.45569
+INFO:tensorflow:step = 14201, loss = 0.698396, precision = 0.882812 (22.443 sec)
+INFO:tensorflow:global_step/sec: 4.45375
+INFO:tensorflow:step = 14301, loss = 0.619853, precision = 0.875 (22.453 sec)
+INFO:tensorflow:global_step/sec: 4.45073
+INFO:tensorflow:step = 14401, loss = 1.01784, precision = 0.789062 (22.468 sec)
+Saved checkpoint after 37 epoch(s) to data/resnet56/checkpoints/00037...
+INFO:tensorflow:global_step/sec: 4.31035
+INFO:tensorflow:step = 14501, loss = 0.705546, precision = 0.875 (23.200 sec)
+INFO:tensorflow:global_step/sec: 4.45412
+INFO:tensorflow:step = 14601, loss = 0.60928, precision = 0.898438 (22.451 sec)
+INFO:tensorflow:global_step/sec: 4.45664
+INFO:tensorflow:step = 14701, loss = 0.762566, precision = 0.820312 (22.438 sec)
+INFO:tensorflow:global_step/sec: 4.45475
+INFO:tensorflow:step = 14801, loss = 0.623383, precision = 0.890625 (22.448 sec)
+Saved checkpoint after 38 epoch(s) to data/resnet56/checkpoints/00038...
+INFO:tensorflow:global_step/sec: 4.31861
+INFO:tensorflow:step = 14901, loss = 0.543638, precision = 0.914062 (23.156 sec)
+INFO:tensorflow:global_step/sec: 4.46276
+INFO:tensorflow:step = 15001, loss = 0.815708, precision = 0.835938 (22.408 sec)
+INFO:tensorflow:global_step/sec: 4.45625
+INFO:tensorflow:step = 15101, loss = 0.602661, precision = 0.90625 (22.440 sec)
+INFO:tensorflow:global_step/sec: 4.46087
+INFO:tensorflow:step = 15201, loss = 0.678878, precision = 0.851562 (22.417 sec)
+Saved checkpoint after 39 epoch(s) to data/resnet56/checkpoints/00039...
+INFO:tensorflow:global_step/sec: 4.31628
+INFO:tensorflow:step = 15301, loss = 0.59399, precision = 0.914062 (23.168 sec)
+INFO:tensorflow:global_step/sec: 4.45798
+INFO:tensorflow:step = 15401, loss = 0.734938, precision = 0.84375 (22.432 sec)
+INFO:tensorflow:global_step/sec: 4.45917
+INFO:tensorflow:step = 15501, loss = 0.564672, precision = 0.898438 (22.426 sec)
+INFO:tensorflow:global_step/sec: 4.465
+INFO:tensorflow:step = 15601, loss = 0.799991, precision = 0.835938 (22.396 sec)
+Saved checkpoint after 40 epoch(s) to data/resnet56/checkpoints/00040...
+INFO:tensorflow:global_step/sec: 4.31517
+INFO:tensorflow:step = 15701, loss = 0.673989, precision = 0.875 (23.174 sec)
+INFO:tensorflow:global_step/sec: 4.45874
+INFO:tensorflow:step = 15801, loss = 0.717926, precision = 0.820312 (22.428 sec)
+INFO:tensorflow:global_step/sec: 4.46574
+INFO:tensorflow:step = 15901, loss = 0.7067, precision = 0.851562 (22.393 sec)
+INFO:tensorflow:global_step/sec: 4.46908
+INFO:tensorflow:step = 16001, loss = 0.797281, precision = 0.84375 (22.376 sec)
+Saved checkpoint after 41 epoch(s) to data/resnet56/checkpoints/00041...
+INFO:tensorflow:global_step/sec: 4.32259
+INFO:tensorflow:step = 16101, loss = 0.48504, precision = 0.9375 (23.134 sec)
+INFO:tensorflow:global_step/sec: 4.45888
+INFO:tensorflow:step = 16201, loss = 0.67983, precision = 0.867188 (22.427 sec)
+INFO:tensorflow:global_step/sec: 4.4646
+INFO:tensorflow:step = 16301, loss = 0.758278, precision = 0.84375 (22.398 sec)
+INFO:tensorflow:global_step/sec: 4.46445
+INFO:tensorflow:step = 16401, loss = 0.603408, precision = 0.882812 (22.399 sec)
+Saved checkpoint after 42 epoch(s) to data/resnet56/checkpoints/00042...
+INFO:tensorflow:global_step/sec: 4.31584
+INFO:tensorflow:step = 16501, loss = 0.679688, precision = 0.875 (23.171 sec)
+INFO:tensorflow:global_step/sec: 4.46342
+INFO:tensorflow:step = 16601, loss = 0.665068, precision = 0.875 (22.404 sec)
+INFO:tensorflow:global_step/sec: 4.46521
+INFO:tensorflow:step = 16701, loss = 0.571283, precision = 0.898438 (22.395 sec)
+INFO:tensorflow:global_step/sec: 4.46467
+INFO:tensorflow:step = 16801, loss = 0.686729, precision = 0.898438 (22.398 sec)
+Saved checkpoint after 43 epoch(s) to data/resnet56/checkpoints/00043...
+INFO:tensorflow:global_step/sec: 4.32524
+INFO:tensorflow:step = 16901, loss = 0.628125, precision = 0.867188 (23.120 sec)
+INFO:tensorflow:global_step/sec: 4.46822
+INFO:tensorflow:step = 17001, loss = 0.672178, precision = 0.867188 (22.380 sec)
+INFO:tensorflow:global_step/sec: 4.46754
+INFO:tensorflow:step = 17101, loss = 0.555898, precision = 0.921875 (22.384 sec)
+INFO:tensorflow:global_step/sec: 4.4712
+INFO:tensorflow:step = 17201, loss = 0.58739, precision = 0.898438 (22.365 sec)
+Saved checkpoint after 44 epoch(s) to data/resnet56/checkpoints/00044...
+INFO:tensorflow:global_step/sec: 4.32427
+INFO:tensorflow:step = 17301, loss = 0.587773, precision = 0.890625 (23.125 sec)
+INFO:tensorflow:global_step/sec: 4.46832
+INFO:tensorflow:step = 17401, loss = 0.684193, precision = 0.875 (22.380 sec)
+INFO:tensorflow:global_step/sec: 4.47095
+INFO:tensorflow:step = 17501, loss = 0.791584, precision = 0.84375 (22.367 sec)
+Saved checkpoint after 45 epoch(s) to data/resnet56/checkpoints/00045...
+INFO:tensorflow:global_step/sec: 4.30772
+INFO:tensorflow:step = 17601, loss = 0.554155, precision = 0.9375 (23.214 sec)
+INFO:tensorflow:global_step/sec: 4.46798
+INFO:tensorflow:step = 17701, loss = 0.575025, precision = 0.90625 (22.381 sec)
+INFO:tensorflow:global_step/sec: 4.47222
+INFO:tensorflow:step = 17801, loss = 0.613981, precision = 0.875 (22.360 sec)
+INFO:tensorflow:global_step/sec: 4.47328
+INFO:tensorflow:step = 17901, loss = 0.799553, precision = 0.859375 (22.355 sec)
+Saved checkpoint after 46 epoch(s) to data/resnet56/checkpoints/00046...
+INFO:tensorflow:global_step/sec: 4.32748
+INFO:tensorflow:step = 18001, loss = 0.662487, precision = 0.851562 (23.108 sec)
+INFO:tensorflow:global_step/sec: 4.47201
+INFO:tensorflow:step = 18101, loss = 0.534046, precision = 0.929688 (22.361 sec)
+INFO:tensorflow:global_step/sec: 4.47037
+INFO:tensorflow:step = 18201, loss = 0.659802, precision = 0.851562 (22.370 sec)
+INFO:tensorflow:global_step/sec: 4.47305
+INFO:tensorflow:step = 18301, loss = 0.653311, precision = 0.859375 (22.356 sec)
+Saved checkpoint after 47 epoch(s) to data/resnet56/checkpoints/00047...
+INFO:tensorflow:global_step/sec: 4.32432
+INFO:tensorflow:step = 18401, loss = 0.6255, precision = 0.890625 (23.125 sec)
+INFO:tensorflow:global_step/sec: 4.47791
+INFO:tensorflow:step = 18501, loss = 0.694052, precision = 0.859375 (22.332 sec)
+INFO:tensorflow:global_step/sec: 4.47571
+INFO:tensorflow:step = 18601, loss = 0.599611, precision = 0.890625 (22.343 sec)
+INFO:tensorflow:global_step/sec: 4.47577
+INFO:tensorflow:step = 18701, loss = 0.531962, precision = 0.929688 (22.343 sec)
+Saved checkpoint after 48 epoch(s) to data/resnet56/checkpoints/00048...
+INFO:tensorflow:global_step/sec: 4.33427
+INFO:tensorflow:step = 18801, loss = 0.622415, precision = 0.890625 (23.072 sec)
+INFO:tensorflow:global_step/sec: 4.478
+INFO:tensorflow:step = 18901, loss = 0.676464, precision = 0.882812 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.47874
+INFO:tensorflow:step = 19001, loss = 0.557365, precision = 0.921875 (22.328 sec)
+INFO:tensorflow:global_step/sec: 4.4817
+INFO:tensorflow:step = 19101, loss = 0.623122, precision = 0.875 (22.313 sec)
+Saved checkpoint after 49 epoch(s) to data/resnet56/checkpoints/00049...
+INFO:tensorflow:global_step/sec: 4.34775
+INFO:tensorflow:step = 19201, loss = 0.607808, precision = 0.882812 (23.000 sec)
+INFO:tensorflow:global_step/sec: 4.48069
+INFO:tensorflow:step = 19301, loss = 0.627917, precision = 0.882812 (22.318 sec)
+INFO:tensorflow:global_step/sec: 4.47963
+INFO:tensorflow:step = 19401, loss = 0.794117, precision = 0.804688 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47432
+INFO:tensorflow:step = 19501, loss = 0.751475, precision = 0.84375 (22.350 sec)
+Saved checkpoint after 50 epoch(s) to data/resnet56/checkpoints/00050...
+INFO:tensorflow:global_step/sec: 4.3357
+INFO:tensorflow:step = 19601, loss = 0.639322, precision = 0.90625 (23.064 sec)
+INFO:tensorflow:global_step/sec: 4.47892
+INFO:tensorflow:step = 19701, loss = 0.770086, precision = 0.867188 (22.327 sec)
+INFO:tensorflow:global_step/sec: 4.48625
+INFO:tensorflow:step = 19801, loss = 0.654616, precision = 0.882812 (22.290 sec)
+INFO:tensorflow:global_step/sec: 4.48281
+INFO:tensorflow:step = 19901, loss = 0.62572, precision = 0.898438 (22.307 sec)
+Saved checkpoint after 51 epoch(s) to data/resnet56/checkpoints/00051...
+INFO:tensorflow:global_step/sec: 4.34296
+INFO:tensorflow:step = 20001, loss = 0.528804, precision = 0.929688 (23.026 sec)
+INFO:tensorflow:global_step/sec: 4.48234
+INFO:tensorflow:step = 20101, loss = 0.672676, precision = 0.882812 (22.310 sec)
+INFO:tensorflow:global_step/sec: 4.47466
+INFO:tensorflow:step = 20201, loss = 0.633192, precision = 0.867188 (22.348 sec)
+INFO:tensorflow:global_step/sec: 4.48073
+INFO:tensorflow:step = 20301, loss = 0.608602, precision = 0.890625 (22.318 sec)
+Saved checkpoint after 52 epoch(s) to data/resnet56/checkpoints/00052...
+INFO:tensorflow:global_step/sec: 4.33368
+INFO:tensorflow:step = 20401, loss = 0.561774, precision = 0.90625 (23.075 sec)
+INFO:tensorflow:global_step/sec: 4.4827
+INFO:tensorflow:step = 20501, loss = 0.665953, precision = 0.898438 (22.308 sec)
+INFO:tensorflow:global_step/sec: 4.47807
+INFO:tensorflow:step = 20601, loss = 0.673195, precision = 0.882812 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.48257
+INFO:tensorflow:step = 20701, loss = 0.612822, precision = 0.898438 (22.309 sec)
+Saved checkpoint after 53 epoch(s) to data/resnet56/checkpoints/00053...
+INFO:tensorflow:global_step/sec: 4.33969
+INFO:tensorflow:step = 20801, loss = 0.718612, precision = 0.859375 (23.043 sec)
+INFO:tensorflow:global_step/sec: 4.47322
+INFO:tensorflow:step = 20901, loss = 0.59768, precision = 0.890625 (22.355 sec)
+INFO:tensorflow:global_step/sec: 4.47811
+INFO:tensorflow:step = 21001, loss = 0.722637, precision = 0.835938 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.47801
+INFO:tensorflow:step = 21101, loss = 0.764791, precision = 0.820312 (22.331 sec)
+Saved checkpoint after 54 epoch(s) to data/resnet56/checkpoints/00054...
+INFO:tensorflow:global_step/sec: 4.33691
+INFO:tensorflow:step = 21201, loss = 0.629764, precision = 0.898438 (23.058 sec)
+INFO:tensorflow:global_step/sec: 4.47383
+INFO:tensorflow:step = 21301, loss = 0.621165, precision = 0.867188 (22.352 sec)
+INFO:tensorflow:global_step/sec: 4.47918
+INFO:tensorflow:step = 21401, loss = 0.763009, precision = 0.828125 (22.325 sec)
+INFO:tensorflow:global_step/sec: 4.47769
+INFO:tensorflow:step = 21501, loss = 0.657822, precision = 0.882812 (22.333 sec)
+Saved checkpoint after 55 epoch(s) to data/resnet56/checkpoints/00055...
+INFO:tensorflow:global_step/sec: 4.33836
+INFO:tensorflow:step = 21601, loss = 0.672901, precision = 0.882812 (23.050 sec)
+INFO:tensorflow:global_step/sec: 4.47617
+INFO:tensorflow:step = 21701, loss = 0.669233, precision = 0.90625 (22.340 sec)
+INFO:tensorflow:global_step/sec: 4.47543
+INFO:tensorflow:step = 21801, loss = 0.629404, precision = 0.90625 (22.344 sec)
+Saved checkpoint after 56 epoch(s) to data/resnet56/checkpoints/00056...
+INFO:tensorflow:global_step/sec: 4.33196
+INFO:tensorflow:step = 21901, loss = 0.660433, precision = 0.867188 (23.084 sec)
+INFO:tensorflow:global_step/sec: 4.47726
+INFO:tensorflow:step = 22001, loss = 0.699404, precision = 0.859375 (22.335 sec)
+INFO:tensorflow:global_step/sec: 4.47488
+INFO:tensorflow:step = 22101, loss = 0.67517, precision = 0.859375 (22.347 sec)
+INFO:tensorflow:global_step/sec: 4.47443
+INFO:tensorflow:step = 22201, loss = 0.765808, precision = 0.859375 (22.349 sec)
+Saved checkpoint after 57 epoch(s) to data/resnet56/checkpoints/00057...
+INFO:tensorflow:global_step/sec: 4.32415
+INFO:tensorflow:step = 22301, loss = 0.662129, precision = 0.867188 (23.126 sec)
+INFO:tensorflow:global_step/sec: 4.47592
+INFO:tensorflow:step = 22401, loss = 0.664909, precision = 0.875 (22.342 sec)
+INFO:tensorflow:global_step/sec: 4.47265
+INFO:tensorflow:step = 22501, loss = 0.648577, precision = 0.898438 (22.358 sec)
+INFO:tensorflow:global_step/sec: 4.48161
+INFO:tensorflow:step = 22601, loss = 0.625795, precision = 0.90625 (22.313 sec)
+Saved checkpoint after 58 epoch(s) to data/resnet56/checkpoints/00058...
+INFO:tensorflow:global_step/sec: 4.33708
+INFO:tensorflow:step = 22701, loss = 0.60033, precision = 0.882812 (23.057 sec)
+INFO:tensorflow:global_step/sec: 4.48357
+INFO:tensorflow:step = 22801, loss = 0.628079, precision = 0.875 (22.304 sec)
+INFO:tensorflow:global_step/sec: 4.47184
+INFO:tensorflow:step = 22901, loss = 0.599005, precision = 0.890625 (22.362 sec)
+INFO:tensorflow:global_step/sec: 4.47864
+INFO:tensorflow:step = 23001, loss = 0.627557, precision = 0.882812 (22.328 sec)
+Saved checkpoint after 59 epoch(s) to data/resnet56/checkpoints/00059...
+INFO:tensorflow:global_step/sec: 4.33705
+INFO:tensorflow:step = 23101, loss = 0.687221, precision = 0.890625 (23.057 sec)
+INFO:tensorflow:global_step/sec: 4.48071
+INFO:tensorflow:step = 23201, loss = 0.617225, precision = 0.875 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47639
+INFO:tensorflow:step = 23301, loss = 0.609474, precision = 0.890625 (22.335 sec)
+INFO:tensorflow:global_step/sec: 4.47951
+INFO:tensorflow:step = 23401, loss = 0.678997, precision = 0.851562 (22.324 sec)
+Saved checkpoint after 60 epoch(s) to data/resnet56/checkpoints/00060...
+INFO:tensorflow:global_step/sec: 4.33811
+INFO:tensorflow:step = 23501, loss = 0.555011, precision = 0.90625 (23.052 sec)
+INFO:tensorflow:global_step/sec: 4.47989
+INFO:tensorflow:step = 23601, loss = 0.567935, precision = 0.921875 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47758
+INFO:tensorflow:step = 23701, loss = 0.659649, precision = 0.875 (22.334 sec)
+INFO:tensorflow:global_step/sec: 4.47985
+INFO:tensorflow:step = 23801, loss = 0.540094, precision = 0.929688 (22.322 sec)
+Saved checkpoint after 61 epoch(s) to data/resnet56/checkpoints/00061...
+INFO:tensorflow:global_step/sec: 4.34054
+INFO:tensorflow:step = 23901, loss = 0.645397, precision = 0.898438 (23.039 sec)
+INFO:tensorflow:global_step/sec: 4.47622
+INFO:tensorflow:step = 24001, loss = 0.634777, precision = 0.859375 (22.340 sec)
+INFO:tensorflow:global_step/sec: 4.47513
+INFO:tensorflow:step = 24101, loss = 0.62364, precision = 0.882812 (22.346 sec)
+INFO:tensorflow:global_step/sec: 4.47479
+INFO:tensorflow:step = 24201, loss = 0.616874, precision = 0.890625 (22.347 sec)
+Saved checkpoint after 62 epoch(s) to data/resnet56/checkpoints/00062...
+INFO:tensorflow:global_step/sec: 4.34177
+INFO:tensorflow:step = 24301, loss = 0.757324, precision = 0.851562 (23.032 sec)
+INFO:tensorflow:global_step/sec: 4.48225
+INFO:tensorflow:step = 24401, loss = 0.53275, precision = 0.890625 (22.310 sec)
+INFO:tensorflow:global_step/sec: 4.47543
+INFO:tensorflow:step = 24501, loss = 0.697075, precision = 0.859375 (22.344 sec)
+INFO:tensorflow:global_step/sec: 4.47614
+INFO:tensorflow:step = 24601, loss = 0.578508, precision = 0.90625 (22.341 sec)
+Saved checkpoint after 63 epoch(s) to data/resnet56/checkpoints/00063...
+INFO:tensorflow:global_step/sec: 4.33184
+INFO:tensorflow:step = 24701, loss = 0.559016, precision = 0.921875 (23.085 sec)
+INFO:tensorflow:global_step/sec: 4.47353
+INFO:tensorflow:step = 24801, loss = 0.621101, precision = 0.90625 (22.354 sec)
+INFO:tensorflow:global_step/sec: 4.47975
+INFO:tensorflow:step = 24901, loss = 0.635789, precision = 0.90625 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47496
+INFO:tensorflow:step = 25001, loss = 0.666004, precision = 0.898438 (22.347 sec)
+Saved checkpoint after 64 epoch(s) to data/resnet56/checkpoints/00064...
+INFO:tensorflow:global_step/sec: 4.34354
+INFO:tensorflow:step = 25101, loss = 0.526246, precision = 0.90625 (23.023 sec)
+INFO:tensorflow:global_step/sec: 4.4783
+INFO:tensorflow:step = 25201, loss = 0.542472, precision = 0.929688 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.47995
+INFO:tensorflow:step = 25301, loss = 0.732964, precision = 0.835938 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.48549
+INFO:tensorflow:step = 25401, loss = 0.547594, precision = 0.929688 (22.294 sec)
+Saved checkpoint after 65 epoch(s) to data/resnet56/checkpoints/00065...
+INFO:tensorflow:global_step/sec: 4.33989
+INFO:tensorflow:step = 25501, loss = 0.714811, precision = 0.835938 (23.042 sec)
+INFO:tensorflow:global_step/sec: 4.48
+INFO:tensorflow:step = 25601, loss = 0.675548, precision = 0.875 (22.321 sec)
+INFO:tensorflow:global_step/sec: 4.47825
+INFO:tensorflow:step = 25701, loss = 0.759873, precision = 0.84375 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.48126
+INFO:tensorflow:step = 25801, loss = 0.665174, precision = 0.914062 (22.315 sec)
+Saved checkpoint after 66 epoch(s) to data/resnet56/checkpoints/00066...
+INFO:tensorflow:global_step/sec: 4.3475
+INFO:tensorflow:step = 25901, loss = 0.646115, precision = 0.890625 (23.002 sec)
+INFO:tensorflow:global_step/sec: 4.47579
+INFO:tensorflow:step = 26001, loss = 0.622689, precision = 0.882812 (22.342 sec)
+INFO:tensorflow:global_step/sec: 4.47762
+INFO:tensorflow:step = 26101, loss = 0.652957, precision = 0.890625 (22.333 sec)
+Saved checkpoint after 67 epoch(s) to data/resnet56/checkpoints/00067...
+INFO:tensorflow:global_step/sec: 4.34179
+INFO:tensorflow:step = 26201, loss = 0.538071, precision = 0.898438 (23.032 sec)
+INFO:tensorflow:global_step/sec: 4.47965
+INFO:tensorflow:step = 26301, loss = 0.584642, precision = 0.90625 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47668
+INFO:tensorflow:step = 26401, loss = 0.662661, precision = 0.898438 (22.338 sec)
+INFO:tensorflow:global_step/sec: 4.48339
+INFO:tensorflow:step = 26501, loss = 0.644137, precision = 0.882812 (22.305 sec)
+Saved checkpoint after 68 epoch(s) to data/resnet56/checkpoints/00068...
+INFO:tensorflow:global_step/sec: 4.3416
+INFO:tensorflow:step = 26601, loss = 0.530003, precision = 0.929688 (23.033 sec)
+INFO:tensorflow:global_step/sec: 4.47724
+INFO:tensorflow:step = 26701, loss = 0.633854, precision = 0.882812 (22.335 sec)
+INFO:tensorflow:global_step/sec: 4.47527
+INFO:tensorflow:step = 26801, loss = 0.560745, precision = 0.898438 (22.345 sec)
+INFO:tensorflow:global_step/sec: 4.47963
+INFO:tensorflow:step = 26901, loss = 0.759418, precision = 0.851562 (22.323 sec)
+Saved checkpoint after 69 epoch(s) to data/resnet56/checkpoints/00069...
+INFO:tensorflow:global_step/sec: 4.34373
+INFO:tensorflow:step = 27001, loss = 0.572407, precision = 0.921875 (23.022 sec)
+INFO:tensorflow:global_step/sec: 4.47935
+INFO:tensorflow:step = 27101, loss = 0.549663, precision = 0.882812 (22.325 sec)
+INFO:tensorflow:global_step/sec: 4.47604
+INFO:tensorflow:step = 27201, loss = 0.620045, precision = 0.882812 (22.341 sec)
+INFO:tensorflow:global_step/sec: 4.47855
+INFO:tensorflow:step = 27301, loss = 0.647443, precision = 0.84375 (22.329 sec)
+Saved checkpoint after 70 epoch(s) to data/resnet56/checkpoints/00070...
+INFO:tensorflow:global_step/sec: 4.32367
+INFO:tensorflow:step = 27401, loss = 0.551731, precision = 0.898438 (23.129 sec)
+INFO:tensorflow:global_step/sec: 4.47313
+INFO:tensorflow:step = 27501, loss = 0.689272, precision = 0.867188 (22.356 sec)
+INFO:tensorflow:global_step/sec: 4.47547
+INFO:tensorflow:step = 27601, loss = 0.612163, precision = 0.898438 (22.344 sec)
+INFO:tensorflow:global_step/sec: 4.48048
+INFO:tensorflow:step = 27701, loss = 0.558836, precision = 0.898438 (22.319 sec)
+Saved checkpoint after 71 epoch(s) to data/resnet56/checkpoints/00071...
+INFO:tensorflow:global_step/sec: 4.34061
+INFO:tensorflow:step = 27801, loss = 0.689491, precision = 0.867188 (23.038 sec)
+INFO:tensorflow:global_step/sec: 4.48146
+INFO:tensorflow:step = 27901, loss = 0.66182, precision = 0.882812 (22.314 sec)
+INFO:tensorflow:global_step/sec: 4.4795
+INFO:tensorflow:step = 28001, loss = 0.562205, precision = 0.90625 (22.324 sec)
+INFO:tensorflow:global_step/sec: 4.47432
+INFO:tensorflow:step = 28101, loss = 0.590328, precision = 0.921875 (22.350 sec)
+Saved checkpoint after 72 epoch(s) to data/resnet56/checkpoints/00072...
+INFO:tensorflow:global_step/sec: 4.34281
+INFO:tensorflow:step = 28201, loss = 0.600064, precision = 0.898438 (23.027 sec)
+INFO:tensorflow:global_step/sec: 4.48329
+INFO:tensorflow:step = 28301, loss = 0.578669, precision = 0.90625 (22.305 sec)
+INFO:tensorflow:global_step/sec: 4.47475
+INFO:tensorflow:step = 28401, loss = 0.893421, precision = 0.796875 (22.348 sec)
+INFO:tensorflow:global_step/sec: 4.47717
+INFO:tensorflow:step = 28501, loss = 0.601729, precision = 0.898438 (22.336 sec)
+Saved checkpoint after 73 epoch(s) to data/resnet56/checkpoints/00073...
+INFO:tensorflow:global_step/sec: 4.33757
+INFO:tensorflow:step = 28601, loss = 0.672622, precision = 0.875 (23.055 sec)
+INFO:tensorflow:global_step/sec: 4.47439
+INFO:tensorflow:step = 28701, loss = 0.519379, precision = 0.929688 (22.349 sec)
+INFO:tensorflow:global_step/sec: 4.47163
+INFO:tensorflow:step = 28801, loss = 0.641164, precision = 0.882812 (22.363 sec)
+INFO:tensorflow:global_step/sec: 4.47881
+INFO:tensorflow:step = 28901, loss = 0.608074, precision = 0.882812 (22.327 sec)
+Saved checkpoint after 74 epoch(s) to data/resnet56/checkpoints/00074...
+INFO:tensorflow:global_step/sec: 4.3395
+INFO:tensorflow:step = 29001, loss = 0.747144, precision = 0.867188 (23.044 sec)
+INFO:tensorflow:global_step/sec: 4.4759
+INFO:tensorflow:step = 29101, loss = 0.745581, precision = 0.851562 (22.342 sec)
+INFO:tensorflow:global_step/sec: 4.47412
+INFO:tensorflow:step = 29201, loss = 0.616241, precision = 0.851562 (22.351 sec)
+INFO:tensorflow:global_step/sec: 4.47901
+INFO:tensorflow:step = 29301, loss = 0.654456, precision = 0.90625 (22.326 sec)
+Saved checkpoint after 75 epoch(s) to data/resnet56/checkpoints/00075...
+INFO:tensorflow:global_step/sec: 4.34002
+INFO:tensorflow:step = 29401, loss = 0.629244, precision = 0.90625 (23.041 sec)
+INFO:tensorflow:global_step/sec: 4.48011
+INFO:tensorflow:step = 29501, loss = 0.600061, precision = 0.90625 (22.321 sec)
+INFO:tensorflow:global_step/sec: 4.47822
+INFO:tensorflow:step = 29601, loss = 0.643823, precision = 0.921875 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.48098
+INFO:tensorflow:step = 29701, loss = 0.565762, precision = 0.90625 (22.317 sec)
+Saved checkpoint after 76 epoch(s) to data/resnet56/checkpoints/00076...
+INFO:tensorflow:global_step/sec: 4.3453
+INFO:tensorflow:step = 29801, loss = 0.624435, precision = 0.875 (23.013 sec)
+INFO:tensorflow:global_step/sec: 4.47154
+INFO:tensorflow:step = 29901, loss = 0.714645, precision = 0.875 (22.364 sec)
+INFO:tensorflow:global_step/sec: 4.4753
+INFO:tensorflow:step = 30001, loss = 0.64738, precision = 0.882812 (22.345 sec)
+INFO:tensorflow:global_step/sec: 4.47762
+INFO:tensorflow:step = 30101, loss = 0.535702, precision = 0.929688 (22.333 sec)
+Saved checkpoint after 77 epoch(s) to data/resnet56/checkpoints/00077...
+INFO:tensorflow:global_step/sec: 4.34367
+INFO:tensorflow:step = 30201, loss = 0.583189, precision = 0.914062 (23.022 sec)
+INFO:tensorflow:global_step/sec: 4.47254
+INFO:tensorflow:step = 30301, loss = 0.684224, precision = 0.875 (22.359 sec)
+INFO:tensorflow:global_step/sec: 4.4748
+INFO:tensorflow:step = 30401, loss = 0.624616, precision = 0.90625 (22.347 sec)
+Saved checkpoint after 78 epoch(s) to data/resnet56/checkpoints/00078...
+INFO:tensorflow:global_step/sec: 4.34285
+INFO:tensorflow:step = 30501, loss = 0.717701, precision = 0.84375 (23.026 sec)
+INFO:tensorflow:global_step/sec: 4.48109
+INFO:tensorflow:step = 30601, loss = 0.640411, precision = 0.875 (22.316 sec)
+INFO:tensorflow:global_step/sec: 4.4703
+INFO:tensorflow:step = 30701, loss = 0.634734, precision = 0.914062 (22.370 sec)
+INFO:tensorflow:global_step/sec: 4.47577
+INFO:tensorflow:step = 30801, loss = 0.682454, precision = 0.867188 (22.343 sec)
+Saved checkpoint after 79 epoch(s) to data/resnet56/checkpoints/00079...
+INFO:tensorflow:global_step/sec: 4.34613
+INFO:tensorflow:step = 30901, loss = 0.564666, precision = 0.898438 (23.009 sec)
+INFO:tensorflow:global_step/sec: 4.47579
+INFO:tensorflow:step = 31001, loss = 0.577395, precision = 0.90625 (22.342 sec)
+INFO:tensorflow:global_step/sec: 4.47583
+INFO:tensorflow:step = 31101, loss = 0.573427, precision = 0.914062 (22.342 sec)
+INFO:tensorflow:global_step/sec: 4.48426
+INFO:tensorflow:step = 31201, loss = 0.798483, precision = 0.828125 (22.300 sec)
+Saved checkpoint after 80 epoch(s) to data/resnet56/checkpoints/00080...
+INFO:tensorflow:global_step/sec: 4.33997
+INFO:tensorflow:step = 31301, loss = 0.460844, precision = 0.960938 (23.042 sec)
+INFO:tensorflow:global_step/sec: 4.48185
+INFO:tensorflow:step = 31401, loss = 0.599156, precision = 0.890625 (22.312 sec)
+INFO:tensorflow:global_step/sec: 4.47427
+INFO:tensorflow:step = 31501, loss = 0.552579, precision = 0.9375 (22.350 sec)
+INFO:tensorflow:global_step/sec: 4.48057
+INFO:tensorflow:step = 31601, loss = 0.559604, precision = 0.914062 (22.319 sec)
+Saved checkpoint after 81 epoch(s) to data/resnet56/checkpoints/00081...
+INFO:tensorflow:global_step/sec: 4.34039
+INFO:tensorflow:step = 31701, loss = 0.672168, precision = 0.875 (23.040 sec)
+INFO:tensorflow:global_step/sec: 4.47813
+INFO:tensorflow:step = 31801, loss = 0.664845, precision = 0.84375 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.47698
+INFO:tensorflow:step = 31901, loss = 0.517187, precision = 0.9375 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.4755
+INFO:tensorflow:step = 32001, loss = 0.643888, precision = 0.898438 (22.344 sec)
+Saved checkpoint after 82 epoch(s) to data/resnet56/checkpoints/00082...
+INFO:tensorflow:global_step/sec: 4.33596
+INFO:tensorflow:step = 32101, loss = 0.537358, precision = 0.90625 (23.063 sec)
+INFO:tensorflow:global_step/sec: 4.47342
+INFO:tensorflow:step = 32201, loss = 0.559992, precision = 0.90625 (22.354 sec)
+INFO:tensorflow:global_step/sec: 4.47984
+INFO:tensorflow:step = 32301, loss = 0.655004, precision = 0.898438 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47915
+INFO:tensorflow:step = 32401, loss = 0.700973, precision = 0.882812 (22.326 sec)
+Saved checkpoint after 83 epoch(s) to data/resnet56/checkpoints/00083...
+INFO:tensorflow:global_step/sec: 4.34492
+INFO:tensorflow:step = 32501, loss = 0.658736, precision = 0.914062 (23.015 sec)
+INFO:tensorflow:global_step/sec: 4.47362
+INFO:tensorflow:step = 32601, loss = 0.739758, precision = 0.84375 (22.353 sec)
+INFO:tensorflow:global_step/sec: 4.47558
+INFO:tensorflow:step = 32701, loss = 0.616397, precision = 0.898438 (22.344 sec)
+INFO:tensorflow:global_step/sec: 4.47873
+INFO:tensorflow:step = 32801, loss = 0.605727, precision = 0.90625 (22.328 sec)
+Saved checkpoint after 84 epoch(s) to data/resnet56/checkpoints/00084...
+INFO:tensorflow:global_step/sec: 4.34232
+INFO:tensorflow:step = 32901, loss = 0.593016, precision = 0.90625 (23.029 sec)
+INFO:tensorflow:global_step/sec: 4.47638
+INFO:tensorflow:step = 33001, loss = 0.546129, precision = 0.921875 (22.339 sec)
+INFO:tensorflow:global_step/sec: 4.4772
+INFO:tensorflow:step = 33101, loss = 0.655493, precision = 0.882812 (22.335 sec)
+INFO:tensorflow:global_step/sec: 4.47777
+INFO:tensorflow:step = 33201, loss = 0.701782, precision = 0.851562 (22.333 sec)
+Saved checkpoint after 85 epoch(s) to data/resnet56/checkpoints/00085...
+INFO:tensorflow:global_step/sec: 4.34783
+INFO:tensorflow:step = 33301, loss = 0.679748, precision = 0.867188 (23.000 sec)
+INFO:tensorflow:global_step/sec: 4.48276
+INFO:tensorflow:step = 33401, loss = 0.647157, precision = 0.875 (22.308 sec)
+INFO:tensorflow:global_step/sec: 4.4813
+INFO:tensorflow:step = 33501, loss = 0.653915, precision = 0.882812 (22.315 sec)
+INFO:tensorflow:global_step/sec: 4.47889
+INFO:tensorflow:step = 33601, loss = 0.691286, precision = 0.890625 (22.327 sec)
+Saved checkpoint after 86 epoch(s) to data/resnet56/checkpoints/00086...
+INFO:tensorflow:global_step/sec: 4.34331
+INFO:tensorflow:step = 33701, loss = 0.56487, precision = 0.882812 (23.024 sec)
+INFO:tensorflow:global_step/sec: 4.48051
+INFO:tensorflow:step = 33801, loss = 0.521744, precision = 0.90625 (22.319 sec)
+INFO:tensorflow:global_step/sec: 4.48362
+INFO:tensorflow:step = 33901, loss = 0.683376, precision = 0.875 (22.303 sec)
+INFO:tensorflow:global_step/sec: 4.48076
+INFO:tensorflow:step = 34001, loss = 0.642107, precision = 0.898438 (22.318 sec)
+Saved checkpoint after 87 epoch(s) to data/resnet56/checkpoints/00087...
+INFO:tensorflow:global_step/sec: 4.3393
+INFO:tensorflow:step = 34101, loss = 0.62013, precision = 0.867188 (23.045 sec)
+INFO:tensorflow:global_step/sec: 4.47403
+INFO:tensorflow:step = 34201, loss = 0.611267, precision = 0.90625 (22.351 sec)
+INFO:tensorflow:global_step/sec: 4.48027
+INFO:tensorflow:step = 34301, loss = 0.657234, precision = 0.882812 (22.320 sec)
+INFO:tensorflow:global_step/sec: 4.48324
+INFO:tensorflow:step = 34401, loss = 0.632644, precision = 0.890625 (22.305 sec)
+Saved checkpoint after 88 epoch(s) to data/resnet56/checkpoints/00088...
+INFO:tensorflow:global_step/sec: 4.3333
+INFO:tensorflow:step = 34501, loss = 0.661909, precision = 0.835938 (23.077 sec)
+INFO:tensorflow:global_step/sec: 4.48456
+INFO:tensorflow:step = 34601, loss = 0.662691, precision = 0.882812 (22.299 sec)
+INFO:tensorflow:global_step/sec: 4.48414
+INFO:tensorflow:step = 34701, loss = 0.595145, precision = 0.867188 (22.301 sec)
+Saved checkpoint after 89 epoch(s) to data/resnet56/checkpoints/00089...
+INFO:tensorflow:global_step/sec: 4.34203
+INFO:tensorflow:step = 34801, loss = 0.613056, precision = 0.882812 (23.031 sec)
+INFO:tensorflow:global_step/sec: 4.48459
+INFO:tensorflow:step = 34901, loss = 0.541507, precision = 0.90625 (22.298 sec)
+INFO:tensorflow:global_step/sec: 4.47997
+INFO:tensorflow:step = 35001, loss = 0.619292, precision = 0.882812 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47716
+INFO:tensorflow:step = 35101, loss = 0.75025, precision = 0.851562 (22.336 sec)
+Saved checkpoint after 90 epoch(s) to data/resnet56/checkpoints/00090...
+INFO:tensorflow:global_step/sec: 4.34034
+INFO:tensorflow:step = 35201, loss = 0.835665, precision = 0.835938 (23.040 sec)
+INFO:tensorflow:global_step/sec: 4.47985
+INFO:tensorflow:step = 35301, loss = 0.562269, precision = 0.9375 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47772
+INFO:tensorflow:step = 35401, loss = 0.680498, precision = 0.851562 (22.333 sec)
+INFO:tensorflow:global_step/sec: 4.47444
+INFO:tensorflow:step = 35501, loss = 0.556598, precision = 0.929688 (22.349 sec)
+Saved checkpoint after 91 epoch(s) to data/resnet56/checkpoints/00091...
+INFO:tensorflow:global_step/sec: 4.33981
+INFO:tensorflow:step = 35601, loss = 0.6121, precision = 0.921875 (23.043 sec)
+INFO:tensorflow:global_step/sec: 4.48139
+INFO:tensorflow:step = 35701, loss = 0.520096, precision = 0.945312 (22.314 sec)
+INFO:tensorflow:global_step/sec: 4.48246
+INFO:tensorflow:step = 35801, loss = 0.465138, precision = 0.9375 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.4839
+INFO:tensorflow:step = 35901, loss = 0.505517, precision = 0.929688 (22.302 sec)
+Saved checkpoint after 92 epoch(s) to data/resnet56/checkpoints/00092...
+INFO:tensorflow:global_step/sec: 4.3445
+INFO:tensorflow:step = 36001, loss = 0.56204, precision = 0.890625 (23.018 sec)
+INFO:tensorflow:global_step/sec: 4.47519
+INFO:tensorflow:step = 36101, loss = 0.396846, precision = 0.976562 (22.345 sec)
+INFO:tensorflow:global_step/sec: 4.47793
+INFO:tensorflow:step = 36201, loss = 0.442978, precision = 0.921875 (22.332 sec)
+INFO:tensorflow:global_step/sec: 4.48186
+INFO:tensorflow:step = 36301, loss = 0.440646, precision = 0.960938 (22.312 sec)
+Saved checkpoint after 93 epoch(s) to data/resnet56/checkpoints/00093...
+INFO:tensorflow:global_step/sec: 4.34313
+INFO:tensorflow:step = 36401, loss = 0.486813, precision = 0.945312 (23.025 sec)
+INFO:tensorflow:global_step/sec: 4.4799
+INFO:tensorflow:step = 36501, loss = 0.381302, precision = 0.976562 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47822
+INFO:tensorflow:step = 36601, loss = 0.429124, precision = 0.945312 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.47654
+INFO:tensorflow:step = 36701, loss = 0.47484, precision = 0.929688 (22.339 sec)
+Saved checkpoint after 94 epoch(s) to data/resnet56/checkpoints/00094...
+INFO:tensorflow:global_step/sec: 4.32386
+INFO:tensorflow:step = 36801, loss = 0.412389, precision = 0.945312 (23.128 sec)
+INFO:tensorflow:global_step/sec: 4.47529
+INFO:tensorflow:step = 36901, loss = 0.396952, precision = 0.96875 (22.345 sec)
+INFO:tensorflow:global_step/sec: 4.47541
+INFO:tensorflow:step = 37001, loss = 0.390477, precision = 0.953125 (22.344 sec)
+INFO:tensorflow:global_step/sec: 4.47774
+INFO:tensorflow:step = 37101, loss = 0.330942, precision = 0.992188 (22.333 sec)
+Saved checkpoint after 95 epoch(s) to data/resnet56/checkpoints/00095...
+INFO:tensorflow:global_step/sec: 4.34205
+INFO:tensorflow:step = 37201, loss = 0.386468, precision = 0.953125 (23.031 sec)
+INFO:tensorflow:global_step/sec: 4.47964
+INFO:tensorflow:step = 37301, loss = 0.360481, precision = 0.96875 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47682
+INFO:tensorflow:step = 37401, loss = 0.534517, precision = 0.9375 (22.337 sec)
+INFO:tensorflow:global_step/sec: 4.48362
+INFO:tensorflow:step = 37501, loss = 0.338728, precision = 0.984375 (22.303 sec)
+Saved checkpoint after 96 epoch(s) to data/resnet56/checkpoints/00096...
+INFO:tensorflow:global_step/sec: 4.34685
+INFO:tensorflow:step = 37601, loss = 0.33943, precision = 0.96875 (23.005 sec)
+INFO:tensorflow:global_step/sec: 4.47697
+INFO:tensorflow:step = 37701, loss = 0.374605, precision = 0.945312 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.48373
+INFO:tensorflow:step = 37801, loss = 0.325652, precision = 0.976562 (22.303 sec)
+INFO:tensorflow:global_step/sec: 4.47936
+INFO:tensorflow:step = 37901, loss = 0.356839, precision = 0.960938 (22.325 sec)
+Saved checkpoint after 97 epoch(s) to data/resnet56/checkpoints/00097...
+INFO:tensorflow:global_step/sec: 4.34856
+INFO:tensorflow:step = 38001, loss = 0.327103, precision = 0.96875 (22.996 sec)
+INFO:tensorflow:global_step/sec: 4.47705
+INFO:tensorflow:step = 38101, loss = 0.382744, precision = 0.945312 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.47596
+INFO:tensorflow:step = 38201, loss = 0.429803, precision = 0.929688 (22.342 sec)
+INFO:tensorflow:global_step/sec: 4.47858
+INFO:tensorflow:step = 38301, loss = 0.325897, precision = 0.96875 (22.328 sec)
+Saved checkpoint after 98 epoch(s) to data/resnet56/checkpoints/00098...
+INFO:tensorflow:global_step/sec: 4.34182
+INFO:tensorflow:step = 38401, loss = 0.376224, precision = 0.953125 (23.032 sec)
+INFO:tensorflow:global_step/sec: 4.48366
+INFO:tensorflow:step = 38501, loss = 0.411681, precision = 0.921875 (22.303 sec)
+INFO:tensorflow:global_step/sec: 4.48795
+INFO:tensorflow:step = 38601, loss = 0.377877, precision = 0.945312 (22.282 sec)
+INFO:tensorflow:global_step/sec: 4.48599
+INFO:tensorflow:step = 38701, loss = 0.372027, precision = 0.960938 (22.292 sec)
+Saved checkpoint after 99 epoch(s) to data/resnet56/checkpoints/00099...
+INFO:tensorflow:global_step/sec: 4.34256
+INFO:tensorflow:step = 38801, loss = 0.338772, precision = 0.953125 (23.028 sec)
+INFO:tensorflow:global_step/sec: 4.4757
+INFO:tensorflow:step = 38901, loss = 0.326271, precision = 0.976562 (22.343 sec)
+INFO:tensorflow:global_step/sec: 4.48563
+INFO:tensorflow:step = 39001, loss = 0.334021, precision = 0.960938 (22.293 sec)
+Saved checkpoint after 100 epoch(s) to data/resnet56/checkpoints/00100...
+INFO:tensorflow:global_step/sec: 4.34941
+INFO:tensorflow:step = 39101, loss = 0.288725, precision = 0.984375 (22.992 sec)
+INFO:tensorflow:global_step/sec: 4.48832
+INFO:tensorflow:step = 39201, loss = 0.257883, precision = 1.0 (22.280 sec)
+INFO:tensorflow:global_step/sec: 4.48933
+INFO:tensorflow:step = 39301, loss = 0.297077, precision = 0.96875 (22.275 sec)
+INFO:tensorflow:global_step/sec: 4.48674
+INFO:tensorflow:step = 39401, loss = 0.275303, precision = 0.984375 (22.288 sec)
+Saved checkpoint after 101 epoch(s) to data/resnet56/checkpoints/00101...
+INFO:tensorflow:global_step/sec: 4.349
+INFO:tensorflow:step = 39501, loss = 0.288223, precision = 0.96875 (22.994 sec)
+INFO:tensorflow:global_step/sec: 4.48821
+INFO:tensorflow:step = 39601, loss = 0.384414, precision = 0.960938 (22.280 sec)
+INFO:tensorflow:global_step/sec: 4.48147
+INFO:tensorflow:step = 39701, loss = 0.26662, precision = 0.992188 (22.314 sec)
+INFO:tensorflow:global_step/sec: 4.48824
+INFO:tensorflow:step = 39801, loss = 0.294838, precision = 0.96875 (22.280 sec)
+Saved checkpoint after 102 epoch(s) to data/resnet56/checkpoints/00102...
+INFO:tensorflow:global_step/sec: 4.34559
+INFO:tensorflow:step = 39901, loss = 0.355804, precision = 0.945312 (23.012 sec)
+INFO:tensorflow:global_step/sec: 4.48779
+INFO:tensorflow:step = 40001, loss = 0.286997, precision = 0.96875 (22.283 sec)
+INFO:tensorflow:global_step/sec: 4.4836
+INFO:tensorflow:step = 40101, loss = 0.36991, precision = 0.953125 (22.303 sec)
+INFO:tensorflow:global_step/sec: 4.48958
+INFO:tensorflow:step = 40201, loss = 0.254701, precision = 0.984375 (22.274 sec)
+Saved checkpoint after 103 epoch(s) to data/resnet56/checkpoints/00103...
+INFO:tensorflow:global_step/sec: 4.34825
+INFO:tensorflow:step = 40301, loss = 0.305098, precision = 0.976562 (22.998 sec)
+INFO:tensorflow:global_step/sec: 4.49055
+INFO:tensorflow:step = 40401, loss = 0.309185, precision = 0.96875 (22.269 sec)
+INFO:tensorflow:global_step/sec: 4.48873
+INFO:tensorflow:step = 40501, loss = 0.246391, precision = 0.984375 (22.278 sec)
+INFO:tensorflow:global_step/sec: 4.48569
+INFO:tensorflow:step = 40601, loss = 0.25039, precision = 0.984375 (22.293 sec)
+Saved checkpoint after 104 epoch(s) to data/resnet56/checkpoints/00104...
+INFO:tensorflow:global_step/sec: 4.35119
+INFO:tensorflow:step = 40701, loss = 0.266932, precision = 0.976562 (22.982 sec)
+INFO:tensorflow:global_step/sec: 4.48528
+INFO:tensorflow:step = 40801, loss = 0.271679, precision = 0.976562 (22.295 sec)
+INFO:tensorflow:global_step/sec: 4.48386
+INFO:tensorflow:step = 40901, loss = 0.240861, precision = 0.96875 (22.302 sec)
+INFO:tensorflow:global_step/sec: 4.48583
+INFO:tensorflow:step = 41001, loss = 0.309205, precision = 0.976562 (22.292 sec)
+Saved checkpoint after 105 epoch(s) to data/resnet56/checkpoints/00105...
+INFO:tensorflow:global_step/sec: 4.3463
+INFO:tensorflow:step = 41101, loss = 0.24821, precision = 0.992188 (23.009 sec)
+INFO:tensorflow:global_step/sec: 4.48993
+INFO:tensorflow:step = 41201, loss = 0.299468, precision = 0.960938 (22.271 sec)
+INFO:tensorflow:global_step/sec: 4.48647
+INFO:tensorflow:step = 41301, loss = 0.345025, precision = 0.96875 (22.289 sec)
+INFO:tensorflow:global_step/sec: 4.48144
+INFO:tensorflow:step = 41401, loss = 0.235546, precision = 1.0 (22.314 sec)
+Saved checkpoint after 106 epoch(s) to data/resnet56/checkpoints/00106...
+INFO:tensorflow:global_step/sec: 4.34517
+INFO:tensorflow:step = 41501, loss = 0.300669, precision = 0.96875 (23.014 sec)
+INFO:tensorflow:global_step/sec: 4.4814
+INFO:tensorflow:step = 41601, loss = 0.210292, precision = 0.992188 (22.314 sec)
+INFO:tensorflow:global_step/sec: 4.48339
+INFO:tensorflow:step = 41701, loss = 0.273247, precision = 0.96875 (22.305 sec)
+INFO:tensorflow:global_step/sec: 4.48042
+INFO:tensorflow:step = 41801, loss = 0.245743, precision = 0.984375 (22.319 sec)
+Saved checkpoint after 107 epoch(s) to data/resnet56/checkpoints/00107...
+INFO:tensorflow:global_step/sec: 4.33776
+INFO:tensorflow:step = 41901, loss = 0.224736, precision = 0.992188 (23.053 sec)
+INFO:tensorflow:global_step/sec: 4.47813
+INFO:tensorflow:step = 42001, loss = 0.251512, precision = 0.976562 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.47972
+INFO:tensorflow:step = 42101, loss = 0.249587, precision = 0.976562 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.48522
+INFO:tensorflow:step = 42201, loss = 0.240219, precision = 0.976562 (22.295 sec)
+Saved checkpoint after 108 epoch(s) to data/resnet56/checkpoints/00108...
+INFO:tensorflow:global_step/sec: 4.34102
+INFO:tensorflow:step = 42301, loss = 0.25533, precision = 0.976562 (23.036 sec)
+INFO:tensorflow:global_step/sec: 4.47833
+INFO:tensorflow:step = 42401, loss = 0.243456, precision = 0.992188 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.48129
+INFO:tensorflow:step = 42501, loss = 0.256046, precision = 0.976562 (22.315 sec)
+INFO:tensorflow:global_step/sec: 4.47707
+INFO:tensorflow:step = 42601, loss = 0.279839, precision = 0.96875 (22.336 sec)
+Saved checkpoint after 109 epoch(s) to data/resnet56/checkpoints/00109...
+INFO:tensorflow:global_step/sec: 4.34756
+INFO:tensorflow:step = 42701, loss = 0.280275, precision = 0.96875 (23.001 sec)
+INFO:tensorflow:global_step/sec: 4.47851
+INFO:tensorflow:step = 42801, loss = 0.234846, precision = 0.976562 (22.329 sec)
+INFO:tensorflow:global_step/sec: 4.47383
+INFO:tensorflow:step = 42901, loss = 0.233972, precision = 0.976562 (22.352 sec)
+INFO:tensorflow:global_step/sec: 4.47416
+INFO:tensorflow:step = 43001, loss = 0.23397, precision = 0.96875 (22.351 sec)
+Saved checkpoint after 110 epoch(s) to data/resnet56/checkpoints/00110...
+INFO:tensorflow:global_step/sec: 4.34654
+INFO:tensorflow:step = 43101, loss = 0.246549, precision = 0.96875 (23.007 sec)
+INFO:tensorflow:global_step/sec: 4.48409
+INFO:tensorflow:step = 43201, loss = 0.279334, precision = 0.945312 (22.301 sec)
+INFO:tensorflow:global_step/sec: 4.48103
+INFO:tensorflow:step = 43301, loss = 0.218195, precision = 0.992188 (22.316 sec)
+Saved checkpoint after 111 epoch(s) to data/resnet56/checkpoints/00111...
+INFO:tensorflow:global_step/sec: 4.34718
+INFO:tensorflow:step = 43401, loss = 0.192685, precision = 1.0 (23.003 sec)
+INFO:tensorflow:global_step/sec: 4.48474
+INFO:tensorflow:step = 43501, loss = 0.248958, precision = 0.96875 (22.298 sec)
+INFO:tensorflow:global_step/sec: 4.47636
+INFO:tensorflow:step = 43601, loss = 0.233495, precision = 0.976562 (22.340 sec)
+INFO:tensorflow:global_step/sec: 4.47568
+INFO:tensorflow:step = 43701, loss = 0.193737, precision = 1.0 (22.343 sec)
+Saved checkpoint after 112 epoch(s) to data/resnet56/checkpoints/00112...
+INFO:tensorflow:global_step/sec: 4.33993
+INFO:tensorflow:step = 43801, loss = 0.237111, precision = 0.96875 (23.042 sec)
+INFO:tensorflow:global_step/sec: 4.48388
+INFO:tensorflow:step = 43901, loss = 0.238463, precision = 0.984375 (22.302 sec)
+INFO:tensorflow:global_step/sec: 4.48472
+INFO:tensorflow:step = 44001, loss = 0.265159, precision = 0.945312 (22.298 sec)
+INFO:tensorflow:global_step/sec: 4.47543
+INFO:tensorflow:step = 44101, loss = 0.24876, precision = 0.960938 (22.344 sec)
+Saved checkpoint after 113 epoch(s) to data/resnet56/checkpoints/00113...
+INFO:tensorflow:global_step/sec: 4.34298
+INFO:tensorflow:step = 44201, loss = 0.19425, precision = 0.992188 (23.026 sec)
+INFO:tensorflow:global_step/sec: 4.47977
+INFO:tensorflow:step = 44301, loss = 0.243087, precision = 0.960938 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.48392
+INFO:tensorflow:step = 44401, loss = 0.249867, precision = 0.96875 (22.302 sec)
+INFO:tensorflow:global_step/sec: 4.47989
+INFO:tensorflow:step = 44501, loss = 0.22165, precision = 0.984375 (22.322 sec)
+Saved checkpoint after 114 epoch(s) to data/resnet56/checkpoints/00114...
+INFO:tensorflow:global_step/sec: 4.3426
+INFO:tensorflow:step = 44601, loss = 0.179656, precision = 1.0 (23.028 sec)
+INFO:tensorflow:global_step/sec: 4.48289
+INFO:tensorflow:step = 44701, loss = 0.210221, precision = 0.984375 (22.307 sec)
+INFO:tensorflow:global_step/sec: 4.4824
+INFO:tensorflow:step = 44801, loss = 0.187466, precision = 1.0 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.48283
+INFO:tensorflow:step = 44901, loss = 0.260017, precision = 0.953125 (22.307 sec)
+Saved checkpoint after 115 epoch(s) to data/resnet56/checkpoints/00115...
+INFO:tensorflow:global_step/sec: 4.34147
+INFO:tensorflow:step = 45001, loss = 0.222655, precision = 0.976562 (23.034 sec)
+INFO:tensorflow:global_step/sec: 4.48651
+INFO:tensorflow:step = 45101, loss = 0.178365, precision = 1.0 (22.289 sec)
+INFO:tensorflow:global_step/sec: 4.47934
+INFO:tensorflow:step = 45201, loss = 0.17727, precision = 1.0 (22.325 sec)
+INFO:tensorflow:global_step/sec: 4.48161
+INFO:tensorflow:step = 45301, loss = 0.195759, precision = 0.984375 (22.313 sec)
+Saved checkpoint after 116 epoch(s) to data/resnet56/checkpoints/00116...
+INFO:tensorflow:global_step/sec: 4.339
+INFO:tensorflow:step = 45401, loss = 0.184987, precision = 1.0 (23.047 sec)
+INFO:tensorflow:global_step/sec: 4.48939
+INFO:tensorflow:step = 45501, loss = 0.210008, precision = 0.984375 (22.275 sec)
+INFO:tensorflow:global_step/sec: 4.47894
+INFO:tensorflow:step = 45601, loss = 0.273858, precision = 0.960938 (22.327 sec)
+INFO:tensorflow:global_step/sec: 4.48194
+INFO:tensorflow:step = 45701, loss = 0.193758, precision = 0.984375 (22.312 sec)
+Saved checkpoint after 117 epoch(s) to data/resnet56/checkpoints/00117...
+INFO:tensorflow:global_step/sec: 4.34338
+INFO:tensorflow:step = 45801, loss = 0.193953, precision = 0.984375 (23.024 sec)
+INFO:tensorflow:global_step/sec: 4.47802
+INFO:tensorflow:step = 45901, loss = 0.209495, precision = 0.984375 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.4868
+INFO:tensorflow:step = 46001, loss = 0.262984, precision = 0.9375 (22.288 sec)
+INFO:tensorflow:global_step/sec: 4.4823
+INFO:tensorflow:step = 46101, loss = 0.25817, precision = 0.96875 (22.310 sec)
+Saved checkpoint after 118 epoch(s) to data/resnet56/checkpoints/00118...
+INFO:tensorflow:global_step/sec: 4.34303
+INFO:tensorflow:step = 46201, loss = 0.2217, precision = 0.984375 (23.025 sec)
+INFO:tensorflow:global_step/sec: 4.48511
+INFO:tensorflow:step = 46301, loss = 0.207195, precision = 0.984375 (22.296 sec)
+INFO:tensorflow:global_step/sec: 4.48103
+INFO:tensorflow:step = 46401, loss = 0.237368, precision = 0.96875 (22.316 sec)
+INFO:tensorflow:global_step/sec: 4.48291
+INFO:tensorflow:step = 46501, loss = 0.301492, precision = 0.9375 (22.307 sec)
+Saved checkpoint after 119 epoch(s) to data/resnet56/checkpoints/00119...
+INFO:tensorflow:global_step/sec: 4.33829
+INFO:tensorflow:step = 46601, loss = 0.177623, precision = 0.992188 (23.051 sec)
+INFO:tensorflow:global_step/sec: 4.482
+INFO:tensorflow:step = 46701, loss = 0.203984, precision = 0.984375 (22.311 sec)
+INFO:tensorflow:global_step/sec: 4.48457
+INFO:tensorflow:step = 46801, loss = 0.200425, precision = 0.976562 (22.299 sec)
+INFO:tensorflow:global_step/sec: 4.47776
+INFO:tensorflow:step = 46901, loss = 0.172613, precision = 1.0 (22.333 sec)
+Saved checkpoint after 120 epoch(s) to data/resnet56/checkpoints/00120...
+INFO:tensorflow:global_step/sec: 4.33559
+INFO:tensorflow:step = 47001, loss = 0.24131, precision = 0.960938 (23.065 sec)
+INFO:tensorflow:global_step/sec: 4.48291
+INFO:tensorflow:step = 47101, loss = 0.248983, precision = 0.953125 (22.307 sec)
+INFO:tensorflow:global_step/sec: 4.48423
+INFO:tensorflow:step = 47201, loss = 0.234525, precision = 0.953125 (22.300 sec)
+INFO:tensorflow:global_step/sec: 4.47729
+INFO:tensorflow:step = 47301, loss = 0.193822, precision = 0.976562 (22.335 sec)
+Saved checkpoint after 121 epoch(s) to data/resnet56/checkpoints/00121...
+INFO:tensorflow:global_step/sec: 4.33783
+INFO:tensorflow:step = 47401, loss = 0.212934, precision = 0.976562 (23.053 sec)
+INFO:tensorflow:global_step/sec: 4.48521
+INFO:tensorflow:step = 47501, loss = 0.195632, precision = 0.992188 (22.295 sec)
+INFO:tensorflow:global_step/sec: 4.4798
+INFO:tensorflow:step = 47601, loss = 0.219186, precision = 0.976562 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.479
+INFO:tensorflow:step = 47701, loss = 0.20215, precision = 0.96875 (22.326 sec)
+Saved checkpoint after 122 epoch(s) to data/resnet56/checkpoints/00122...
+INFO:tensorflow:global_step/sec: 4.34762
+INFO:tensorflow:step = 47801, loss = 0.187719, precision = 0.984375 (23.001 sec)
+INFO:tensorflow:global_step/sec: 4.48012
+INFO:tensorflow:step = 47901, loss = 0.1874, precision = 1.0 (22.321 sec)
+INFO:tensorflow:global_step/sec: 4.482
+INFO:tensorflow:step = 48001, loss = 0.230754, precision = 0.976562 (22.312 sec)
+Saved checkpoint after 123 epoch(s) to data/resnet56/checkpoints/00123...
+INFO:tensorflow:global_step/sec: 4.34144
+INFO:tensorflow:step = 48101, loss = 0.201421, precision = 0.976562 (23.034 sec)
+INFO:tensorflow:global_step/sec: 4.47557
+INFO:tensorflow:step = 48201, loss = 0.165825, precision = 1.0 (22.343 sec)
+INFO:tensorflow:global_step/sec: 4.48165
+INFO:tensorflow:step = 48301, loss = 0.264286, precision = 0.960938 (22.313 sec)
+INFO:tensorflow:global_step/sec: 4.48304
+INFO:tensorflow:step = 48401, loss = 0.225219, precision = 0.976562 (22.306 sec)
+Saved checkpoint after 124 epoch(s) to data/resnet56/checkpoints/00124...
+INFO:tensorflow:global_step/sec: 4.3409
+INFO:tensorflow:step = 48501, loss = 0.193306, precision = 0.984375 (23.037 sec)
+INFO:tensorflow:global_step/sec: 4.48242
+INFO:tensorflow:step = 48601, loss = 0.190381, precision = 0.976562 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.48642
+INFO:tensorflow:step = 48701, loss = 0.20198, precision = 0.984375 (22.290 sec)
+INFO:tensorflow:global_step/sec: 4.47669
+INFO:tensorflow:step = 48801, loss = 0.195457, precision = 0.976562 (22.338 sec)
+Saved checkpoint after 125 epoch(s) to data/resnet56/checkpoints/00125...
+INFO:tensorflow:global_step/sec: 4.34613
+INFO:tensorflow:step = 48901, loss = 0.210935, precision = 0.976562 (23.009 sec)
+INFO:tensorflow:global_step/sec: 4.47447
+INFO:tensorflow:step = 49001, loss = 0.192821, precision = 0.992188 (22.349 sec)
+INFO:tensorflow:global_step/sec: 4.48047
+INFO:tensorflow:step = 49101, loss = 0.231033, precision = 0.976562 (22.319 sec)
+INFO:tensorflow:global_step/sec: 4.47873
+INFO:tensorflow:step = 49201, loss = 0.183505, precision = 0.984375 (22.328 sec)
+Saved checkpoint after 126 epoch(s) to data/resnet56/checkpoints/00126...
+INFO:tensorflow:global_step/sec: 4.34338
+INFO:tensorflow:step = 49301, loss = 0.200501, precision = 0.976562 (23.024 sec)
+INFO:tensorflow:global_step/sec: 4.48086
+INFO:tensorflow:step = 49401, loss = 0.247788, precision = 0.960938 (22.317 sec)
+INFO:tensorflow:global_step/sec: 4.47511
+INFO:tensorflow:step = 49501, loss = 0.262762, precision = 0.96875 (22.346 sec)
+INFO:tensorflow:global_step/sec: 4.48023
+INFO:tensorflow:step = 49601, loss = 0.194367, precision = 0.96875 (22.320 sec)
+Saved checkpoint after 127 epoch(s) to data/resnet56/checkpoints/00127...
+INFO:tensorflow:global_step/sec: 4.34194
+INFO:tensorflow:step = 49701, loss = 0.182765, precision = 0.992188 (23.031 sec)
+INFO:tensorflow:global_step/sec: 4.48237
+INFO:tensorflow:step = 49801, loss = 0.21972, precision = 0.976562 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.47712
+INFO:tensorflow:step = 49901, loss = 0.171858, precision = 0.992188 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.48064
+INFO:tensorflow:step = 50001, loss = 0.17638, precision = 0.992188 (22.318 sec)
+Saved checkpoint after 128 epoch(s) to data/resnet56/checkpoints/00128...
+INFO:tensorflow:global_step/sec: 4.3388
+INFO:tensorflow:step = 50101, loss = 0.200966, precision = 0.984375 (23.048 sec)
+INFO:tensorflow:global_step/sec: 4.48539
+INFO:tensorflow:step = 50201, loss = 0.233755, precision = 0.96875 (22.295 sec)
+INFO:tensorflow:global_step/sec: 4.47623
+INFO:tensorflow:step = 50301, loss = 0.171946, precision = 0.984375 (22.340 sec)
+INFO:tensorflow:global_step/sec: 4.47669
+INFO:tensorflow:step = 50401, loss = 0.208355, precision = 0.976562 (22.338 sec)
+Saved checkpoint after 129 epoch(s) to data/resnet56/checkpoints/00129...
+INFO:tensorflow:global_step/sec: 4.3338
+INFO:tensorflow:step = 50501, loss = 0.246959, precision = 0.976562 (23.075 sec)
+INFO:tensorflow:global_step/sec: 4.47872
+INFO:tensorflow:step = 50601, loss = 0.178178, precision = 0.984375 (22.328 sec)
+INFO:tensorflow:global_step/sec: 4.47227
+INFO:tensorflow:step = 50701, loss = 0.207603, precision = 0.976562 (22.360 sec)
+INFO:tensorflow:global_step/sec: 4.48074
+INFO:tensorflow:step = 50801, loss = 0.231859, precision = 0.976562 (22.318 sec)
+Saved checkpoint after 130 epoch(s) to data/resnet56/checkpoints/00130...
+INFO:tensorflow:global_step/sec: 4.34069
+INFO:tensorflow:step = 50901, loss = 0.172081, precision = 0.992188 (23.038 sec)
+INFO:tensorflow:global_step/sec: 4.48334
+INFO:tensorflow:step = 51001, loss = 0.153538, precision = 1.0 (22.305 sec)
+INFO:tensorflow:global_step/sec: 4.47645
+INFO:tensorflow:step = 51101, loss = 0.17441, precision = 0.984375 (22.339 sec)
+INFO:tensorflow:global_step/sec: 4.48145
+INFO:tensorflow:step = 51201, loss = 0.254012, precision = 0.953125 (22.314 sec)
+Saved checkpoint after 131 epoch(s) to data/resnet56/checkpoints/00131...
+INFO:tensorflow:global_step/sec: 4.33846
+INFO:tensorflow:step = 51301, loss = 0.219521, precision = 0.976562 (23.050 sec)
+INFO:tensorflow:global_step/sec: 4.47799
+INFO:tensorflow:step = 51401, loss = 0.27856, precision = 0.953125 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.47534
+INFO:tensorflow:step = 51501, loss = 0.160786, precision = 0.992188 (22.345 sec)
+INFO:tensorflow:global_step/sec: 4.48282
+INFO:tensorflow:step = 51601, loss = 0.20776, precision = 0.960938 (22.307 sec)
+Saved checkpoint after 132 epoch(s) to data/resnet56/checkpoints/00132...
+INFO:tensorflow:global_step/sec: 4.31808
+INFO:tensorflow:step = 51701, loss = 0.252294, precision = 0.945312 (23.158 sec)
+INFO:tensorflow:global_step/sec: 4.48097
+INFO:tensorflow:step = 51801, loss = 0.184217, precision = 0.976562 (22.317 sec)
+INFO:tensorflow:global_step/sec: 4.48308
+INFO:tensorflow:step = 51901, loss = 0.193138, precision = 0.976562 (22.306 sec)
+INFO:tensorflow:global_step/sec: 4.48254
+INFO:tensorflow:step = 52001, loss = 0.190958, precision = 0.984375 (22.309 sec)
+Saved checkpoint after 133 epoch(s) to data/resnet56/checkpoints/00133...
+INFO:tensorflow:global_step/sec: 4.34351
+INFO:tensorflow:step = 52101, loss = 0.169937, precision = 0.992188 (23.023 sec)
+INFO:tensorflow:global_step/sec: 4.48319
+INFO:tensorflow:step = 52201, loss = 0.231622, precision = 0.96875 (22.305 sec)
+INFO:tensorflow:global_step/sec: 4.47884
+INFO:tensorflow:step = 52301, loss = 0.220849, precision = 0.976562 (22.327 sec)
+Saved checkpoint after 134 epoch(s) to data/resnet56/checkpoints/00134...
+INFO:tensorflow:global_step/sec: 4.34468
+INFO:tensorflow:step = 52401, loss = 0.212435, precision = 0.976562 (23.017 sec)
+INFO:tensorflow:global_step/sec: 4.48068
+INFO:tensorflow:step = 52501, loss = 0.200846, precision = 0.984375 (22.318 sec)
+INFO:tensorflow:global_step/sec: 4.48375
+INFO:tensorflow:step = 52601, loss = 0.164221, precision = 0.992188 (22.303 sec)
+INFO:tensorflow:global_step/sec: 4.48177
+INFO:tensorflow:step = 52701, loss = 0.169099, precision = 0.992188 (22.313 sec)
+Saved checkpoint after 135 epoch(s) to data/resnet56/checkpoints/00135...
+INFO:tensorflow:global_step/sec: 4.33768
+INFO:tensorflow:step = 52801, loss = 0.271096, precision = 0.945312 (23.054 sec)
+INFO:tensorflow:global_step/sec: 4.47956
+INFO:tensorflow:step = 52901, loss = 0.176045, precision = 0.992188 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47534
+INFO:tensorflow:step = 53001, loss = 0.2366, precision = 0.976562 (22.345 sec)
+INFO:tensorflow:global_step/sec: 4.47484
+INFO:tensorflow:step = 53101, loss = 0.149071, precision = 1.0 (22.347 sec)
+Saved checkpoint after 136 epoch(s) to data/resnet56/checkpoints/00136...
+INFO:tensorflow:global_step/sec: 4.33933
+INFO:tensorflow:step = 53201, loss = 0.161579, precision = 1.0 (23.045 sec)
+INFO:tensorflow:global_step/sec: 4.48373
+INFO:tensorflow:step = 53301, loss = 0.181923, precision = 0.984375 (22.303 sec)
+INFO:tensorflow:global_step/sec: 4.4789
+INFO:tensorflow:step = 53401, loss = 0.155796, precision = 1.0 (22.327 sec)
+INFO:tensorflow:global_step/sec: 4.48422
+INFO:tensorflow:step = 53501, loss = 0.144522, precision = 1.0 (22.300 sec)
+Saved checkpoint after 137 epoch(s) to data/resnet56/checkpoints/00137...
+INFO:tensorflow:global_step/sec: 4.34049
+INFO:tensorflow:step = 53601, loss = 0.145669, precision = 1.0 (23.039 sec)
+INFO:tensorflow:global_step/sec: 4.48142
+INFO:tensorflow:step = 53701, loss = 0.147998, precision = 1.0 (22.314 sec)
+INFO:tensorflow:global_step/sec: 4.48171
+INFO:tensorflow:step = 53801, loss = 0.14366, precision = 1.0 (22.313 sec)
+INFO:tensorflow:global_step/sec: 4.48139
+INFO:tensorflow:step = 53901, loss = 0.143514, precision = 1.0 (22.314 sec)
+Saved checkpoint after 138 epoch(s) to data/resnet56/checkpoints/00138...
+INFO:tensorflow:global_step/sec: 4.33924
+INFO:tensorflow:step = 54001, loss = 0.137567, precision = 1.0 (23.046 sec)
+INFO:tensorflow:global_step/sec: 4.47542
+INFO:tensorflow:step = 54101, loss = 0.17957, precision = 0.984375 (22.344 sec)
+INFO:tensorflow:global_step/sec: 4.48675
+INFO:tensorflow:step = 54201, loss = 0.156771, precision = 0.992188 (22.288 sec)
+INFO:tensorflow:global_step/sec: 4.4836
+INFO:tensorflow:step = 54301, loss = 0.160249, precision = 0.992188 (22.304 sec)
+Saved checkpoint after 139 epoch(s) to data/resnet56/checkpoints/00139...
+INFO:tensorflow:global_step/sec: 4.33506
+INFO:tensorflow:step = 54401, loss = 0.160879, precision = 0.992188 (23.068 sec)
+INFO:tensorflow:global_step/sec: 4.48021
+INFO:tensorflow:step = 54501, loss = 0.143232, precision = 1.0 (22.320 sec)
+INFO:tensorflow:global_step/sec: 4.47303
+INFO:tensorflow:step = 54601, loss = 0.154995, precision = 1.0 (22.356 sec)
+INFO:tensorflow:global_step/sec: 4.47648
+INFO:tensorflow:step = 54701, loss = 0.139482, precision = 1.0 (22.339 sec)
+Saved checkpoint after 140 epoch(s) to data/resnet56/checkpoints/00140...
+INFO:tensorflow:global_step/sec: 4.33303
+INFO:tensorflow:step = 54801, loss = 0.142696, precision = 1.0 (23.079 sec)
+INFO:tensorflow:global_step/sec: 4.47933
+INFO:tensorflow:step = 54901, loss = 0.138538, precision = 1.0 (22.325 sec)
+INFO:tensorflow:global_step/sec: 4.47866
+INFO:tensorflow:step = 55001, loss = 0.164991, precision = 0.992188 (22.328 sec)
+INFO:tensorflow:global_step/sec: 4.48238
+INFO:tensorflow:step = 55101, loss = 0.146175, precision = 1.0 (22.310 sec)
+Saved checkpoint after 141 epoch(s) to data/resnet56/checkpoints/00141...
+INFO:tensorflow:global_step/sec: 4.33851
+INFO:tensorflow:step = 55201, loss = 0.136705, precision = 1.0 (23.049 sec)
+INFO:tensorflow:global_step/sec: 4.48255
+INFO:tensorflow:step = 55301, loss = 0.139411, precision = 1.0 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.48042
+INFO:tensorflow:step = 55401, loss = 0.143066, precision = 1.0 (22.319 sec)
+INFO:tensorflow:global_step/sec: 4.48267
+INFO:tensorflow:step = 55501, loss = 0.158531, precision = 0.992188 (22.308 sec)
+Saved checkpoint after 142 epoch(s) to data/resnet56/checkpoints/00142...
+INFO:tensorflow:global_step/sec: 4.34279
+INFO:tensorflow:step = 55601, loss = 0.14717, precision = 0.992188 (23.027 sec)
+INFO:tensorflow:global_step/sec: 4.47954
+INFO:tensorflow:step = 55701, loss = 0.146559, precision = 0.992188 (22.324 sec)
+INFO:tensorflow:global_step/sec: 4.47985
+INFO:tensorflow:step = 55801, loss = 0.137211, precision = 1.0 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47472
+INFO:tensorflow:step = 55901, loss = 0.158828, precision = 0.992188 (22.348 sec)
+Saved checkpoint after 143 epoch(s) to data/resnet56/checkpoints/00143...
+INFO:tensorflow:global_step/sec: 4.33274
+INFO:tensorflow:step = 56001, loss = 0.182425, precision = 0.984375 (23.080 sec)
+INFO:tensorflow:global_step/sec: 4.47698
+INFO:tensorflow:step = 56101, loss = 0.138114, precision = 1.0 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.47812
+INFO:tensorflow:step = 56201, loss = 0.159647, precision = 0.992188 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.47673
+INFO:tensorflow:step = 56301, loss = 0.139376, precision = 1.0 (22.338 sec)
+Saved checkpoint after 144 epoch(s) to data/resnet56/checkpoints/00144...
+INFO:tensorflow:global_step/sec: 4.33179
+INFO:tensorflow:step = 56401, loss = 0.14621, precision = 1.0 (23.085 sec)
+INFO:tensorflow:global_step/sec: 4.4806
+INFO:tensorflow:step = 56501, loss = 0.13547, precision = 1.0 (22.318 sec)
+INFO:tensorflow:global_step/sec: 4.48532
+INFO:tensorflow:step = 56601, loss = 0.138424, precision = 1.0 (22.295 sec)
+Saved checkpoint after 145 epoch(s) to data/resnet56/checkpoints/00145...
+INFO:tensorflow:global_step/sec: 4.34248
+INFO:tensorflow:step = 56701, loss = 0.140022, precision = 1.0 (23.028 sec)
+INFO:tensorflow:global_step/sec: 4.47968
+INFO:tensorflow:step = 56801, loss = 0.170526, precision = 0.992188 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.48045
+INFO:tensorflow:step = 56901, loss = 0.134399, precision = 1.0 (22.319 sec)
+INFO:tensorflow:global_step/sec: 4.47981
+INFO:tensorflow:step = 57001, loss = 0.134355, precision = 1.0 (22.322 sec)
+Saved checkpoint after 146 epoch(s) to data/resnet56/checkpoints/00146...
+INFO:tensorflow:global_step/sec: 4.34094
+INFO:tensorflow:step = 57101, loss = 0.132593, precision = 1.0 (23.037 sec)
+INFO:tensorflow:global_step/sec: 4.48563
+INFO:tensorflow:step = 57201, loss = 0.137958, precision = 1.0 (22.293 sec)
+INFO:tensorflow:global_step/sec: 4.47805
+INFO:tensorflow:step = 57301, loss = 0.138448, precision = 1.0 (22.331 sec)
+INFO:tensorflow:global_step/sec: 4.48145
+INFO:tensorflow:step = 57401, loss = 0.167958, precision = 0.984375 (22.314 sec)
+Saved checkpoint after 147 epoch(s) to data/resnet56/checkpoints/00147...
+INFO:tensorflow:global_step/sec: 4.33084
+INFO:tensorflow:step = 57501, loss = 0.154431, precision = 0.984375 (23.090 sec)
+INFO:tensorflow:global_step/sec: 4.48561
+INFO:tensorflow:step = 57601, loss = 0.1426, precision = 1.0 (22.293 sec)
+INFO:tensorflow:global_step/sec: 4.4814
+INFO:tensorflow:step = 57701, loss = 0.134405, precision = 1.0 (22.314 sec)
+INFO:tensorflow:global_step/sec: 4.47833
+INFO:tensorflow:step = 57801, loss = 0.141328, precision = 0.992188 (22.330 sec)
+Saved checkpoint after 148 epoch(s) to data/resnet56/checkpoints/00148...
+INFO:tensorflow:global_step/sec: 4.33785
+INFO:tensorflow:step = 57901, loss = 0.134456, precision = 1.0 (23.053 sec)
+INFO:tensorflow:global_step/sec: 4.48032
+INFO:tensorflow:step = 58001, loss = 0.132753, precision = 1.0 (22.320 sec)
+INFO:tensorflow:global_step/sec: 4.47772
+INFO:tensorflow:step = 58101, loss = 0.157741, precision = 0.984375 (22.333 sec)
+INFO:tensorflow:global_step/sec: 4.48172
+INFO:tensorflow:step = 58201, loss = 0.148143, precision = 0.992188 (22.313 sec)
+Saved checkpoint after 149 epoch(s) to data/resnet56/checkpoints/00149...
+INFO:tensorflow:global_step/sec: 4.34384
+INFO:tensorflow:step = 58301, loss = 0.133841, precision = 1.0 (23.021 sec)
+INFO:tensorflow:global_step/sec: 4.4812
+INFO:tensorflow:step = 58401, loss = 0.132977, precision = 1.0 (22.315 sec)
+INFO:tensorflow:global_step/sec: 4.48208
+INFO:tensorflow:step = 58501, loss = 0.134882, precision = 1.0 (22.311 sec)
+INFO:tensorflow:global_step/sec: 4.4815
+INFO:tensorflow:step = 58601, loss = 0.132694, precision = 1.0 (22.314 sec)
+Saved checkpoint after 150 epoch(s) to data/resnet56/checkpoints/00150...
+INFO:tensorflow:global_step/sec: 4.34224
+INFO:tensorflow:step = 58701, loss = 0.133808, precision = 1.0 (23.030 sec)
+INFO:tensorflow:global_step/sec: 4.47921
+INFO:tensorflow:step = 58801, loss = 0.129201, precision = 1.0 (22.325 sec)
+INFO:tensorflow:global_step/sec: 4.46929
+INFO:tensorflow:step = 58901, loss = 0.140288, precision = 1.0 (22.375 sec)
+INFO:tensorflow:global_step/sec: 4.4825
+INFO:tensorflow:step = 59001, loss = 0.133575, precision = 1.0 (22.309 sec)
+Saved checkpoint after 151 epoch(s) to data/resnet56/checkpoints/00151...
+INFO:tensorflow:global_step/sec: 4.32784
+INFO:tensorflow:step = 59101, loss = 0.144807, precision = 0.992188 (23.106 sec)
+INFO:tensorflow:global_step/sec: 4.47973
+INFO:tensorflow:step = 59201, loss = 0.130317, precision = 1.0 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.47977
+INFO:tensorflow:step = 59301, loss = 0.130915, precision = 1.0 (22.323 sec)
+INFO:tensorflow:global_step/sec: 4.48327
+INFO:tensorflow:step = 59401, loss = 0.136418, precision = 1.0 (22.305 sec)
+Saved checkpoint after 152 epoch(s) to data/resnet56/checkpoints/00152...
+INFO:tensorflow:global_step/sec: 4.33346
+INFO:tensorflow:step = 59501, loss = 0.128513, precision = 1.0 (23.076 sec)
+INFO:tensorflow:global_step/sec: 4.48858
+INFO:tensorflow:step = 59601, loss = 0.131417, precision = 1.0 (22.279 sec)
+INFO:tensorflow:global_step/sec: 4.48755
+INFO:tensorflow:step = 59701, loss = 0.131489, precision = 1.0 (22.284 sec)
+INFO:tensorflow:global_step/sec: 4.48466
+INFO:tensorflow:step = 59801, loss = 0.131894, precision = 1.0 (22.298 sec)
+Saved checkpoint after 153 epoch(s) to data/resnet56/checkpoints/00153...
+INFO:tensorflow:global_step/sec: 4.34303
+INFO:tensorflow:step = 59901, loss = 0.131072, precision = 1.0 (23.025 sec)
+INFO:tensorflow:global_step/sec: 4.4846
+INFO:tensorflow:step = 60001, loss = 0.135706, precision = 0.992188 (22.298 sec)
+INFO:tensorflow:global_step/sec: 4.48388
+INFO:tensorflow:step = 60101, loss = 0.133754, precision = 1.0 (22.302 sec)
+INFO:tensorflow:global_step/sec: 4.48525
+INFO:tensorflow:step = 60201, loss = 0.12826, precision = 1.0 (22.295 sec)
+Saved checkpoint after 154 epoch(s) to data/resnet56/checkpoints/00154...
+INFO:tensorflow:global_step/sec: 4.34269
+INFO:tensorflow:step = 60301, loss = 0.128271, precision = 1.0 (23.027 sec)
+INFO:tensorflow:global_step/sec: 4.48577
+INFO:tensorflow:step = 60401, loss = 0.134825, precision = 1.0 (22.293 sec)
+INFO:tensorflow:global_step/sec: 4.4882
+INFO:tensorflow:step = 60501, loss = 0.129867, precision = 1.0 (22.281 sec)
+INFO:tensorflow:global_step/sec: 4.49154
+INFO:tensorflow:step = 60601, loss = 0.132661, precision = 1.0 (22.264 sec)
+Saved checkpoint after 155 epoch(s) to data/resnet56/checkpoints/00155...
+INFO:tensorflow:global_step/sec: 4.34361
+INFO:tensorflow:step = 60701, loss = 0.130404, precision = 1.0 (23.022 sec)
+INFO:tensorflow:global_step/sec: 4.48301
+INFO:tensorflow:step = 60801, loss = 0.141821, precision = 1.0 (22.306 sec)
+INFO:tensorflow:global_step/sec: 4.48388
+INFO:tensorflow:step = 60901, loss = 0.130439, precision = 1.0 (22.302 sec)
+Saved checkpoint after 156 epoch(s) to data/resnet56/checkpoints/00156...
+INFO:tensorflow:global_step/sec: 4.33937
+INFO:tensorflow:step = 61001, loss = 0.129646, precision = 1.0 (23.045 sec)
+INFO:tensorflow:global_step/sec: 4.48644
+INFO:tensorflow:step = 61101, loss = 0.134808, precision = 1.0 (22.289 sec)
+INFO:tensorflow:global_step/sec: 4.48773
+INFO:tensorflow:step = 61201, loss = 0.13193, precision = 1.0 (22.283 sec)
+INFO:tensorflow:global_step/sec: 4.48406
+INFO:tensorflow:step = 61301, loss = 0.129897, precision = 1.0 (22.301 sec)
+Saved checkpoint after 157 epoch(s) to data/resnet56/checkpoints/00157...
+INFO:tensorflow:global_step/sec: 4.32243
+INFO:tensorflow:step = 61401, loss = 0.130939, precision = 1.0 (23.135 sec)
+INFO:tensorflow:global_step/sec: 4.48269
+INFO:tensorflow:step = 61501, loss = 0.127118, precision = 1.0 (22.308 sec)
+INFO:tensorflow:global_step/sec: 4.49009
+INFO:tensorflow:step = 61601, loss = 0.129474, precision = 1.0 (22.271 sec)
+INFO:tensorflow:global_step/sec: 4.48176
+INFO:tensorflow:step = 61701, loss = 0.127278, precision = 1.0 (22.313 sec)
+Saved checkpoint after 158 epoch(s) to data/resnet56/checkpoints/00158...
+INFO:tensorflow:global_step/sec: 4.33774
+INFO:tensorflow:step = 61801, loss = 0.133745, precision = 1.0 (23.054 sec)
+INFO:tensorflow:global_step/sec: 4.47851
+INFO:tensorflow:step = 61901, loss = 0.161725, precision = 0.984375 (22.329 sec)
+INFO:tensorflow:global_step/sec: 4.48109
+INFO:tensorflow:step = 62001, loss = 0.127429, precision = 1.0 (22.316 sec)
+INFO:tensorflow:global_step/sec: 4.4733
+INFO:tensorflow:step = 62101, loss = 0.12917, precision = 1.0 (22.355 sec)
+Saved checkpoint after 159 epoch(s) to data/resnet56/checkpoints/00159...
+INFO:tensorflow:global_step/sec: 4.33521
+INFO:tensorflow:step = 62201, loss = 0.128144, precision = 1.0 (23.067 sec)
+INFO:tensorflow:global_step/sec: 4.47615
+INFO:tensorflow:step = 62301, loss = 0.126545, precision = 1.0 (22.340 sec)
+INFO:tensorflow:global_step/sec: 4.47715
+INFO:tensorflow:step = 62401, loss = 0.12681, precision = 1.0 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.47607
+INFO:tensorflow:step = 62501, loss = 0.131018, precision = 1.0 (22.341 sec)
+Saved checkpoint after 160 epoch(s) to data/resnet56/checkpoints/00160...
+INFO:tensorflow:global_step/sec: 4.33473
+INFO:tensorflow:step = 62601, loss = 0.134579, precision = 1.0 (23.070 sec)
+INFO:tensorflow:global_step/sec: 4.48048
+INFO:tensorflow:step = 62701, loss = 0.143882, precision = 0.992188 (22.319 sec)
+INFO:tensorflow:global_step/sec: 4.47906
+INFO:tensorflow:step = 62801, loss = 0.125715, precision = 1.0 (22.326 sec)
+INFO:tensorflow:global_step/sec: 4.4815
+INFO:tensorflow:step = 62901, loss = 0.127995, precision = 1.0 (22.314 sec)
+Saved checkpoint after 161 epoch(s) to data/resnet56/checkpoints/00161...
+INFO:tensorflow:global_step/sec: 4.3358
+INFO:tensorflow:step = 63001, loss = 0.125639, precision = 1.0 (23.064 sec)
+INFO:tensorflow:global_step/sec: 4.47921
+INFO:tensorflow:step = 63101, loss = 0.124965, precision = 1.0 (22.325 sec)
+INFO:tensorflow:global_step/sec: 4.47788
+INFO:tensorflow:step = 63201, loss = 0.126725, precision = 1.0 (22.332 sec)
+INFO:tensorflow:global_step/sec: 4.48471
+INFO:tensorflow:step = 63301, loss = 0.125203, precision = 1.0 (22.298 sec)
+Saved checkpoint after 162 epoch(s) to data/resnet56/checkpoints/00162...
+INFO:tensorflow:global_step/sec: 4.3371
+INFO:tensorflow:step = 63401, loss = 0.126243, precision = 1.0 (23.057 sec)
+INFO:tensorflow:global_step/sec: 4.48173
+INFO:tensorflow:step = 63501, loss = 0.124489, precision = 1.0 (22.313 sec)
+INFO:tensorflow:global_step/sec: 4.47798
+INFO:tensorflow:step = 63601, loss = 0.125195, precision = 1.0 (22.332 sec)
+INFO:tensorflow:global_step/sec: 4.48272
+INFO:tensorflow:step = 63701, loss = 0.128869, precision = 1.0 (22.308 sec)
+Saved checkpoint after 163 epoch(s) to data/resnet56/checkpoints/00163...
+INFO:tensorflow:global_step/sec: 4.34311
+INFO:tensorflow:step = 63801, loss = 0.125886, precision = 1.0 (23.025 sec)
+INFO:tensorflow:global_step/sec: 4.47832
+INFO:tensorflow:step = 63901, loss = 0.129613, precision = 1.0 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.48262
+INFO:tensorflow:step = 64001, loss = 0.124661, precision = 1.0 (22.308 sec)
+INFO:tensorflow:global_step/sec: 4.48411
+INFO:tensorflow:step = 64101, loss = 0.125143, precision = 1.0 (22.301 sec)
+Saved checkpoint after 164 epoch(s) to data/resnet56/checkpoints/00164...
+INFO:tensorflow:global_step/sec: 4.3437
+INFO:tensorflow:step = 64201, loss = 0.135453, precision = 0.992188 (23.022 sec)
+INFO:tensorflow:global_step/sec: 4.48249
+INFO:tensorflow:step = 64301, loss = 0.126442, precision = 1.0 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.48253
+INFO:tensorflow:step = 64401, loss = 0.152345, precision = 0.984375 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.48186
+INFO:tensorflow:step = 64501, loss = 0.12349, precision = 1.0 (22.312 sec)
+Saved checkpoint after 165 epoch(s) to data/resnet56/checkpoints/00165...
+INFO:tensorflow:global_step/sec: 4.33857
+INFO:tensorflow:step = 64601, loss = 0.133, precision = 0.992188 (23.049 sec)
+INFO:tensorflow:global_step/sec: 4.47874
+INFO:tensorflow:step = 64701, loss = 0.123719, precision = 1.0 (22.328 sec)
+INFO:tensorflow:global_step/sec: 4.47748
+INFO:tensorflow:step = 64801, loss = 0.128324, precision = 0.992188 (22.334 sec)
+INFO:tensorflow:global_step/sec: 4.47989
+INFO:tensorflow:step = 64901, loss = 0.125893, precision = 1.0 (22.322 sec)
+Saved checkpoint after 166 epoch(s) to data/resnet56/checkpoints/00166...
+INFO:tensorflow:global_step/sec: 4.33694
+INFO:tensorflow:step = 65001, loss = 0.125396, precision = 1.0 (23.058 sec)
+INFO:tensorflow:global_step/sec: 4.48446
+INFO:tensorflow:step = 65101, loss = 0.123658, precision = 1.0 (22.299 sec)
+INFO:tensorflow:global_step/sec: 4.47953
+INFO:tensorflow:step = 65201, loss = 0.138463, precision = 1.0 (22.324 sec)
+Saved checkpoint after 167 epoch(s) to data/resnet56/checkpoints/00167...
+INFO:tensorflow:global_step/sec: 4.33663
+INFO:tensorflow:step = 65301, loss = 0.12838, precision = 1.0 (23.059 sec)
+INFO:tensorflow:global_step/sec: 4.48216
+INFO:tensorflow:step = 65401, loss = 0.122669, precision = 1.0 (22.311 sec)
+INFO:tensorflow:global_step/sec: 4.47724
+INFO:tensorflow:step = 65501, loss = 0.122214, precision = 1.0 (22.335 sec)
+INFO:tensorflow:global_step/sec: 4.4791
+INFO:tensorflow:step = 65601, loss = 0.124259, precision = 1.0 (22.326 sec)
+Saved checkpoint after 168 epoch(s) to data/resnet56/checkpoints/00168...
+INFO:tensorflow:global_step/sec: 4.33045
+INFO:tensorflow:step = 65701, loss = 0.123013, precision = 1.0 (23.092 sec)
+INFO:tensorflow:global_step/sec: 4.48721
+INFO:tensorflow:step = 65801, loss = 0.123734, precision = 1.0 (22.285 sec)
+INFO:tensorflow:global_step/sec: 4.48269
+INFO:tensorflow:step = 65901, loss = 0.124381, precision = 1.0 (22.308 sec)
+INFO:tensorflow:global_step/sec: 4.47774
+INFO:tensorflow:step = 66001, loss = 0.121759, precision = 1.0 (22.333 sec)
+Saved checkpoint after 169 epoch(s) to data/resnet56/checkpoints/00169...
+INFO:tensorflow:global_step/sec: 4.33476
+INFO:tensorflow:step = 66101, loss = 0.124492, precision = 1.0 (23.069 sec)
+INFO:tensorflow:global_step/sec: 4.48523
+INFO:tensorflow:step = 66201, loss = 0.137384, precision = 0.992188 (22.295 sec)
+INFO:tensorflow:global_step/sec: 4.47598
+INFO:tensorflow:step = 66301, loss = 0.134893, precision = 1.0 (22.341 sec)
+INFO:tensorflow:global_step/sec: 4.47661
+INFO:tensorflow:step = 66401, loss = 0.126795, precision = 1.0 (22.338 sec)
+Saved checkpoint after 170 epoch(s) to data/resnet56/checkpoints/00170...
+INFO:tensorflow:global_step/sec: 4.31497
+INFO:tensorflow:step = 66501, loss = 0.122441, precision = 1.0 (23.175 sec)
+INFO:tensorflow:global_step/sec: 4.4825
+INFO:tensorflow:step = 66601, loss = 0.125501, precision = 1.0 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.47707
+INFO:tensorflow:step = 66701, loss = 0.120738, precision = 1.0 (22.336 sec)
+INFO:tensorflow:global_step/sec: 4.47815
+INFO:tensorflow:step = 66801, loss = 0.120692, precision = 1.0 (22.331 sec)
+Saved checkpoint after 171 epoch(s) to data/resnet56/checkpoints/00171...
+INFO:tensorflow:global_step/sec: 4.33143
+INFO:tensorflow:step = 66901, loss = 0.138936, precision = 0.992188 (23.087 sec)
+INFO:tensorflow:global_step/sec: 4.47911
+INFO:tensorflow:step = 67001, loss = 0.122162, precision = 1.0 (22.326 sec)
+INFO:tensorflow:global_step/sec: 4.47735
+INFO:tensorflow:step = 67101, loss = 0.128169, precision = 1.0 (22.335 sec)
+INFO:tensorflow:global_step/sec: 4.47897
+INFO:tensorflow:step = 67201, loss = 0.121105, precision = 1.0 (22.327 sec)
+Saved checkpoint after 172 epoch(s) to data/resnet56/checkpoints/00172...
+INFO:tensorflow:global_step/sec: 4.33922
+INFO:tensorflow:step = 67301, loss = 0.12241, precision = 1.0 (23.046 sec)
+INFO:tensorflow:global_step/sec: 4.47899
+INFO:tensorflow:step = 67401, loss = 0.122816, precision = 1.0 (22.326 sec)
+INFO:tensorflow:global_step/sec: 4.4784
+INFO:tensorflow:step = 67501, loss = 0.127149, precision = 1.0 (22.329 sec)
+INFO:tensorflow:global_step/sec: 4.48018
+INFO:tensorflow:step = 67601, loss = 0.119974, precision = 1.0 (22.321 sec)
+Saved checkpoint after 173 epoch(s) to data/resnet56/checkpoints/00173...
+INFO:tensorflow:global_step/sec: 4.34183
+INFO:tensorflow:step = 67701, loss = 0.132654, precision = 0.992188 (23.032 sec)
+INFO:tensorflow:global_step/sec: 4.48177
+INFO:tensorflow:step = 67801, loss = 0.119521, precision = 1.0 (22.313 sec)
+INFO:tensorflow:global_step/sec: 4.48036
+INFO:tensorflow:step = 67901, loss = 0.127807, precision = 0.992188 (22.320 sec)
+INFO:tensorflow:global_step/sec: 4.47754
+INFO:tensorflow:step = 68001, loss = 0.123621, precision = 1.0 (22.334 sec)
+Saved checkpoint after 174 epoch(s) to data/resnet56/checkpoints/00174...
+INFO:tensorflow:global_step/sec: 4.33457
+INFO:tensorflow:step = 68101, loss = 0.121717, precision = 1.0 (23.070 sec)
+INFO:tensorflow:global_step/sec: 4.47978
+INFO:tensorflow:step = 68201, loss = 0.121072, precision = 1.0 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.47941
+INFO:tensorflow:step = 68301, loss = 0.132922, precision = 0.992188 (22.324 sec)
+INFO:tensorflow:global_step/sec: 4.48033
+INFO:tensorflow:step = 68401, loss = 0.128112, precision = 1.0 (22.320 sec)
+Saved checkpoint after 175 epoch(s) to data/resnet56/checkpoints/00175...
+INFO:tensorflow:global_step/sec: 4.33442
+INFO:tensorflow:step = 68501, loss = 0.124797, precision = 1.0 (23.071 sec)
+INFO:tensorflow:global_step/sec: 4.48112
+INFO:tensorflow:step = 68601, loss = 0.121132, precision = 1.0 (22.316 sec)
+INFO:tensorflow:global_step/sec: 4.48206
+INFO:tensorflow:step = 68701, loss = 0.118618, precision = 1.0 (22.311 sec)
+INFO:tensorflow:global_step/sec: 4.47812
+INFO:tensorflow:step = 68801, loss = 0.117399, precision = 1.0 (22.331 sec)
+Saved checkpoint after 176 epoch(s) to data/resnet56/checkpoints/00176...
+INFO:tensorflow:global_step/sec: 4.3387
+INFO:tensorflow:step = 68901, loss = 0.117801, precision = 1.0 (23.048 sec)
+INFO:tensorflow:global_step/sec: 4.47823
+INFO:tensorflow:step = 69001, loss = 0.119858, precision = 1.0 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.475
+INFO:tensorflow:step = 69101, loss = 0.128117, precision = 1.0 (22.346 sec)
+INFO:tensorflow:global_step/sec: 4.4804
+INFO:tensorflow:step = 69201, loss = 0.122545, precision = 1.0 (22.319 sec)
+Saved checkpoint after 177 epoch(s) to data/resnet56/checkpoints/00177...
+INFO:tensorflow:global_step/sec: 4.34532
+INFO:tensorflow:step = 69301, loss = 0.117356, precision = 1.0 (23.013 sec)
+INFO:tensorflow:global_step/sec: 4.48588
+INFO:tensorflow:step = 69401, loss = 0.119963, precision = 1.0 (22.292 sec)
+INFO:tensorflow:global_step/sec: 4.47882
+INFO:tensorflow:step = 69501, loss = 0.120702, precision = 1.0 (22.327 sec)
+Saved checkpoint after 178 epoch(s) to data/resnet56/checkpoints/00178...
+INFO:tensorflow:global_step/sec: 4.3371
+INFO:tensorflow:step = 69601, loss = 0.118072, precision = 1.0 (23.057 sec)
+INFO:tensorflow:global_step/sec: 4.48256
+INFO:tensorflow:step = 69701, loss = 0.123653, precision = 1.0 (22.309 sec)
+INFO:tensorflow:global_step/sec: 4.48435
+INFO:tensorflow:step = 69801, loss = 0.124796, precision = 1.0 (22.300 sec)
+INFO:tensorflow:global_step/sec: 4.48377
+INFO:tensorflow:step = 69901, loss = 0.1224, precision = 1.0 (22.303 sec)
+Saved checkpoint after 179 epoch(s) to data/resnet56/checkpoints/00179...
+INFO:tensorflow:global_step/sec: 4.3431
+INFO:tensorflow:step = 70001, loss = 0.11705, precision = 1.0 (23.025 sec)
+INFO:tensorflow:global_step/sec: 4.47824
+INFO:tensorflow:step = 70101, loss = 0.119858, precision = 1.0 (22.330 sec)
+INFO:tensorflow:global_step/sec: 4.48117
+INFO:tensorflow:step = 70201, loss = 0.116001, precision = 1.0 (22.316 sec)
+INFO:tensorflow:global_step/sec: 4.47945
+INFO:tensorflow:step = 70301, loss = 0.11881, precision = 1.0 (22.324 sec)
+Saved checkpoint after 180 epoch(s) to data/resnet56/checkpoints/00180...
+INFO:tensorflow:global_step/sec: 4.34097
+INFO:tensorflow:step = 70401, loss = 0.119357, precision = 1.0 (23.036 sec)
+INFO:tensorflow:global_step/sec: 4.48274
+INFO:tensorflow:step = 70501, loss = 0.127663, precision = 0.992188 (22.308 sec)
+INFO:tensorflow:global_step/sec: 4.47991
+INFO:tensorflow:step = 70601, loss = 0.117966, precision = 1.0 (22.322 sec)
+INFO:tensorflow:global_step/sec: 4.48177
+INFO:tensorflow:step = 70701, loss = 0.117792, precision = 1.0 (22.313 sec)
+Saved checkpoint after 181 epoch(s) to data/resnet56/checkpoints/00181...
