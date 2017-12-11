@@ -10,15 +10,20 @@ from torch.autograd import Variable
 from torchvision import transforms
 from torchvision import datasets
 
-from benchmark.train import load, MEAN, STD, save_result, MODELS
+from benchmark.utils import save_result
+from benchmark.cifar10.train import MEAN, STD, MODELS
 
 
 class PyTorchEngine:
-    def __init__(self, filename, use_cuda=False, name=None):
-        self.filename = filename
+    def __init__(self, path, arch, use_cuda=False):
+        self.path = path
         self.use_cuda = use_cuda
-        self.name = name
-        model, epoch, accuracy = load(self.filename)
+        self.arch = arch
+        model = MODELS[self.arch]()
+        restored_state = torch.load(path)
+        model = model.load_state_dict(restored_state['model'])
+        accuracy = restored_state['accuracy']
+        epoch = restored_state['epoch'] + 1
 
         if self.use_cuda:
             self.model = model.cuda()
@@ -66,13 +71,13 @@ def infer_cifar10(dataset, engine, start=1, end=128, repeat=100, log2=True,
 
         result = OrderedDict()
         result['nodename'] = os.uname().nodename
-        result['model'] = engine.name
+        result['model'] = engine.arch
         result['use_cuda'] = engine.use_cuda
         result['batch_size'] = batch_size
         result['mean'] = np.mean(times)
         result['std'] = np.std(times)
         result['throughput'] = batch_size / np.mean(times)
-        result['filename'] = engine.filename
+        result['path'] = engine.path
         if output is not None:
             save_result(result, output)
 
@@ -122,13 +127,13 @@ def infer(dataset_dir, run_dir, output_file, start, end, repeat, log2,
 
         if cpu:
             print('With CPU:')
-            engine = PyTorchEngine(path, use_cuda=False, name=model)
+            engine = PyTorchEngine(path, use_cuda=False, arch=model)
             infer_cifar10(testset, engine, start=start, end=end, log2=log2,
                           repeat=repeat, output=output_path)
 
         if gpu and torch.cuda.is_available():
             print('With GPU:')
-            engine = PyTorchEngine(path, use_cuda=True, name=model)
+            engine = PyTorchEngine(path, use_cuda=True, arch=model)
             # Warmup
             time_batch_size(testset, 1, engine.pred, engine.use_cuda, repeat=1)
 

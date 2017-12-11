@@ -9,12 +9,13 @@ setup(
     packages=['benchmark'],
     entry_points={
         'console_scripts': [
-            'bench = benchmark.train:main'
+            'cifar10 = benchmark.cifar10.__main__:cli',
+            'imagenet = benchmark.imagenet.__main__:cli'
         ]
     },
     install_requires=[
+        'tqdm',
         'torchvision',
         'click',
-        'progressbar2'
     ]
 )
